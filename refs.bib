@@ -3162,3 +3162,33 @@
   ISSN =         {2575-713X},
   month =        {June},
 }
+
+@InProceedings{kaiser:gruss:ESSoS2017,
+  author =       "Gruss, Daniel and Lipp, Moritz and Schwarz, Michael and Fellner,
+                  Richard and Maurice, Cl{\'e}mentine and Mangard, Stefan",
+  editor =       "Bodden, Eric and Payer, Mathias and Athanasopoulos, Elias",
+  title =        "KASLR is Dead: Long Live KASLR",
+  booktitle =    "Engineering Secure Software and Systems",
+  year =         "2017",
+  publisher =    "Springer International Publishing",
+  address =      "Cham",
+  pages =        "161--176",
+  abstract =     "Modern operating system kernels employ address space layout
+                  randomization (ASLR) to prevent control-flow hijacking attacks and
+                  code-injection attacks. While kernel security relies fundamentally
+                  on preventing access to address information, recent attacks have
+                  shown that the hardware directly leaks this information. Strictly
+                  splitting kernel space and user space has recently been proposed as
+                  a theoretical concept to close these side channels. However, this
+                  is not trivially possible due to architectural restrictions of the
+                  x86 platform.",
+  isbn =         "978-3-319-62105-0"
+}
+@misc{kpti:hansen:lkml2017,
+  title = {{KPTI Patch}},
+  author = {Dave Hansen},
+  month = {December},
+  year = 2017,
+  howpublished = "\url{https://lkml.org/lkml/2017/12/18/1523}",
+  note = "[Online; accessed 11-March-2019]",
+}
