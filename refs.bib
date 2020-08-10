@@ -3302,7 +3302,7 @@
 }
   
 
-@article{shobha-avocs2004,
+@article{vasudevan-avocs2004,
   title =        "Efficient Model Checking of Hardware Using Conditioned Slicing",
   journal =      "Electronic Notes in Theoretical Computer Science",
   volume =       "128",
@@ -3357,4 +3357,44 @@
   isbn =         "978-3-540-48153-9"
 }
 
-
+@INPROCEEDINGS{vasudevan-vlsid2007,
+  author =       {S. {Vasudevan} and V. {Viswanath} and J. A. {Abraham}},
+  booktitle =    {20th International Conference on VLSI Design held jointly with 6th
+                  International Conference on Embedded Systems (VLSID'07)},
+  title =        {Efficient Microprocessor Verification using Antecedent Conditioned
+                  Slicing},
+  year =         {2007},
+  volume =       {},
+  number =       {},
+  pages =        {43-49},
+  abstract =     {The authors present a technique for automatic verification of
+                  pipelined microprocessors using model checking. Antecedent
+                  conditioned slicing is an efficient abstraction technique for
+                  hardware designs at the register transfer level (RTL). Antecedent
+                  conditioned slicing prunes the verification state space, using
+                  information from the antecedent of a given LTL property. In this
+                  work, the authors model instructions of a pipelined processor as
+                  LTL properties, such that the instruction opcode forms the
+                  antecedent. The antecedent conditioned slicing to decompose the
+                  problem space of pipelined processor verification on an
+                  instruction-wise basis was used. We pass the resulting smaller,
+                  tractable problems through a lower level verification engine. We
+                  thereby verify that every instruction behaves according to the
+                  specification and ensure that non-target registers are not modified
+                  by the instruction. The SMV model checker to verify all the
+                  instruction classes of a Verilog RTL implementation of the OR1200,
+                  an off-the-shelf pipelined processor was used},
+  keywords =     {formal verification;hardware description languages;logic
+                  design;microprocessor chips;pipeline processing;microprocessor
+                  verification;antecedent conditioned slicing;automatic
+                  verification;pipelined microprocessors;model checking;abstraction
+                  technique;register transfer level;verification state space;LTL
+                  properties;pipelined processor verification;SMV model
+                  checker;Verilog RTL
+                  implementation;Microprocessors;Engines;Registers;Hardware design
+                  languages;State-space methods;Formal verification;Process
+                  design;Binary decision diagrams;Jacobian matrices;Testing},
+  doi =          {10.1109/VLSID.2007.70},
+  ISSN =         {2380-6923},
+  month =        {Jan},
+}
