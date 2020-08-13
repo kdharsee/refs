@@ -3439,3 +3439,59 @@
   url =          {https://doi.org/10.1007/s100090100069}
 }
 
+@InProceedings{myreen-tacas2007,
+  author =       "Myreen, Magnus O.  and Gordon, Michael J. C.",
+  editor =       "Grumberg, Orna and Huth, Michael",
+  title =        "Hoare Logic for Realistically Modelled Machine Code",
+  booktitle =    "Tools and Algorithms for the Construction and Analysis of Systems",
+  year =         "2007",
+  publisher =    "Springer Berlin Heidelberg",
+  address =      "Berlin, Heidelberg",
+  pages =        "568--582",
+  abstract =     "This paper presents a mechanised Hoare-style programming logic
+                  framework for assembly level programs. The framework has been
+                  designed to fit on top of operational semantics of realistically
+                  modelled machine code. Many ad hoc restrictions and features
+                  present in real machine-code are handled, including finite memory,
+                  data and code in the same memory space, the behavior of status
+                  registers and hazards of corrupting special purpose registers
+                  (e.g. the program counter, procedure return register and stack
+                  pointer). Despite accurately modeling such low level details, the
+                  approach yields concise specifications for machine-code programs
+                  without using common simplifying assumptions (like an unbounded
+                  state space). The framework is based on a flexible state
+                  representation in which functional and resource usage
+                  specifications are written in a style inspired by separation
+                  logic. The presented work has been formalised in higher-order
+                  logic, mechanised in the HOL4 system and is currently being used to
+                  verify ARM machine-code implementations of arithmetic and
+                  cryptographic operations.",
+  isbn =         "978-3-540-71209-1"
+}
+
+
+@InProceedings{myreen-fsen2007,
+  author =       "Myreen, Magnus O.  and Fox, Anthony C. J.  and Gordon, Michael
+                  J. C.",
+  editor =       "Arbab, Farhad and Sirjani, Marjan",
+  title =        "Hoare Logic for ARM Machine Code",
+  booktitle =    "International Symposium on Fundamentals of Software Engineering",
+  year =         "2007",
+  publisher =    "Springer Berlin Heidelberg",
+  address =      "Berlin, Heidelberg",
+  pages =        "272--286",
+  abstract =     "This paper shows how a machine-code Hoare logic is used to lift
+                  reasoning from the tedious operational model of a machine language
+                  to a manageable level of abstraction without making simplifying
+                  assumptions. A Hoare logic is placed on top of a high-fidelity
+                  model of the ARM instruction set. We show how the generality of ARM
+                  instructions is captured by specifications in the logic and how the
+                  logic can be used to prove loops and procedures that traverse
+                  pointer-based data structures. The presented work has been
+                  mechanised in the HOL4 theorem prover and is currently being used
+                  to verify ARM machine code implementations of arithmetic and
+                  cryptographic operations.",
+  isbn =         "978-3-540-75698-9"
+}
+
+
