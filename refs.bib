@@ -1930,68 +1930,6 @@
                   Platforms},
   journal =      {JFE Technical Report}
 }
-@INPROCEEDINGS{coppelia:zhang:micro2018,
-  author =       {R. {Zhang} and C. {Deutschbein} and P. {Huang} and C. {Sturton}},
-  booktitle =    {2018 51st Annual IEEE/ACM International Symposium on
-                  Microarchitecture (MICRO)},
-  title =        {End-to-End Automated Exploit Generation for Validating the Security
-                  of Processor Designs},
-  year =         {2018},
-  volume =       {},
-  number =       {},
-  pages =        {815-827},
-  abstract =     {This paper presents Coppelia, an end-to-end tool that, given a
-                  processor design and a set of security-critical invariants,
-                  automatically generates complete, replayable exploit programs to
-                  help designers find, contextualize, and assess the security threat
-                  of hardware vulnerabilities. In Coppelia, we develop a
-                  hardware-oriented backward symbolic execution engine with a new
-                  cycle stitching method and fast validation technique, along with
-                  several optimizations for exploit generation. We then add program
-                  stubs to complete the exploit. We evaluate Coppelia on three CPUs
-                  of different architectures. Coppelia is able to find and generate
-                  exploits for 29 of 31 known vulnerabilities in these CPUs,
-                  including 11 vulnerabilities that commercial and academic model
-                  checking tools can not find. All of the generated exploits are
-                  successfully replayable on an FPGA board. Moreover, Coppelia finds
-                  4 new vulnerabilities along with exploits in these CPUs. We also
-                  use Coppelia to verify whether a security patch indeed fixed a
-                  vulnerability, and to refine a set of assertions.},
-  keywords =     {field programmable gate arrays;microprocessor
-                  chips;optimisation;program debugging;program testing;program
-                  verification;security of data;end-to-end automated exploit
-                  generation;FPGA board;academic model checking tools;commercial
-                  model checking tools;CPUs;program stubs;validation technique;cycle
-                  stitching method;hardware-oriented backward symbolic execution
-                  engine;hardware vulnerabilities;security-critical
-                  invariants;processor design;Security;Hardware;Computer bugs;C++
-                  languages;Hardware design languages;Clocks;Engines;Symbolic
-                  Execution;Exploit Generation;Processor Security},
-  doi =          {10.1109/MICRO.2018.00071},
-  ISSN =         {null},
-  month =        {Oct},
-}
-@InProceedings{thomas:cav2013,
-  author =       {Braibant, {Thomas} and Chlipala, {Adam}},
-  editor =       {Sharygina, {Natasha} and Veith, {Helmut}},
-  title =        {Formal Verification of Hardware Synthesis},
-  booktitle =    {Computer Aided Verification},
-  year =         {2013},
-  publisher =    {Springer Berlin Heidelberg},
-  address =      {Berlin, Heidelberg},
-  pages =        {213--228},
-  abstract =     {We report on the implementation of a certified compiler for a
-                  high-level hardware description language (HDL) called Fe-Si
-                  (FEatherweight SynthesIs). Fe-Si is a simplified version of
-                  Bluespec, an HDL based on a notion of guarded atomic actions. Fe-Si
-                  is defined as a dependently typed deep embedding in Coq. The target
-                  language of the compiler corresponds to a synthesisable subset of
-                  Verilog or VHDL. A key aspect of our approach is that input
-                  programs to the compiler can be defined and proved correct inside
-                  Coq. Then, we use extraction and a Verilog back-end (written in
-                  OCaml) to get a certified version of a hardware design.},
-  isbn =         {978-3-642-39799-8}
-}
 
 @INPROCEEDINGS{arvind:iccad2004,
   author =       { {Arvind} and R. S. {Nikhil} and D. L. {Rosenband} and N. {Dave}},
