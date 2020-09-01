@@ -3544,3 +3544,39 @@
                   of hypotheses and guarantees.",
   isbn =         "978-3-540-32250-4"
 }
+
+@inproceedings{coppelia-zhang-micro2018,
+  author =       {Zhang, Rui and Deutschbein, Calvin and Huang, Peng and Sturton,
+                  Cynthia},
+  title =        {End-to-End Automated Exploit Generation for Validating the Security
+                  of Processor Designs},
+  year =         {2018},
+  isbn =         {9781538662403},
+  publisher =    {IEEE Press},
+  url =          {https://doi.org/10.1109/MICRO.2018.00071},
+  doi =          {10.1109/MICRO.2018.00071},
+  abstract =     {This paper presents Coppelia, an end-to-end tool that, given a
+                  processor design and a set of security-critical invariants,
+                  automatically generates complete, replayable exploit programs to
+                  help designers find, contextualize, and assess the security threat
+                  of hardware vulnerabilities. In Coppelia, we develop a
+                  hardware-oriented backward symbolic execution engine with a new
+                  cycle stitching method and fast validation technique, along with
+                  several optimizations for exploit generation. We then add program
+                  stubs to complete the exploit. We evaluate Coppelia on three CPUs
+                  of different architectures. Coppelia is able to find and generate
+                  exploits for 29 of 31 known vulnerabilities in these CPUs,
+                  including 11 vulnerabilities that commercial and academic model
+                  checking tools can not find. All of the generated exploits are
+                  successfully replayable on an FPGA board. Moreover, Coppelia finds
+                  4 new vulnerabilities along with exploits in these CPUs. We also
+                  use Coppelia to verify whether a security patch indeed fixed a
+                  vulnerability, and to refine a set of assertions.},
+  booktitle =    {Proceedings of the 51st Annual IEEE/ACM International Symposium on
+                  Microarchitecture},
+  pages =        {815–827},
+  numpages =     {13},
+  keywords =     {symbolic execution, processor security, exploit generation},
+  location =     {Fukuoka, Japan},
+  series =       {MICRO-51}
+}
