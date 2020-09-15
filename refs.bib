@@ -3606,3 +3606,72 @@
   ISSN =         {2375-1207},
   month =        {May},
 }
+
+@TECHREPORT{mccamant:mitcsailtr2005,
+  AUTHOR =       {McCamant, Stephen and Morrisett, Greg},
+  TITLE =        {Efficient, Verifiable Binary Sandboxing for a CISC Architecture},
+  NUMBER =       {MIT-CSAIL-TR-2005-030},
+  INSTITUTION =  {Massachusetts Institute of Technology Computer Science and
+                  Artificial Intelligence Laboratory},
+  ABSTRACT =     {Executing untrusted code while preserving security
+                  requiresenforcement of memory and control-flow safety
+                  policies:untrusted code must be prevented from modifying memory
+                  orexecuting code except as explicitly allowed. Software-basedfault
+                  isolation (SFI) or "sandboxing" enforces thosepolicies by
+                  rewriting the untrusted code at the level ofindividual
+                  instructions. However, the original sandboxingtechnique of Wahbe et
+                  al. is applicable only to RISCarchitectures, and other previous
+                  work is either insecure,or has been not described in enough detail
+                  to giveconfidence in its security properties. We present a
+                  noveltechnique that allows sandboxing to be easily applied to aCISC
+                  architecture like the IA-32. The technique can beverified to have
+                  been applied at load time, so that neitherthe rewriting tool nor
+                  the compiler needs to be trusted. Wedescribe a prototype
+                  implementation which provides a robustsecurity guarantee, is
+                  scalable to programs of any size, andhas low runtime
+                  overheads. Further, we give amachine-checked proof that any program
+                  approved by theverification algorithm is guaranteed to respect the
+                  desiredsafety property.},
+  MONTH =        {05},
+  YEAR =         {2005},
+  URL =          {http://hdl.handle.net/1721.1/30542}
+}
+
+@inproceedings{webassembly-haas-2017,
+  author =       {Haas, Andreas and Rossberg, Andreas and Schuff, Derek L. and
+                  Titzer, Ben L. and Holman, Michael and Gohman, Dan and Wagner, Luke
+                  and Zakai, Alon and Bastien, JF},
+  title =        {Bringing the Web up to Speed with WebAssembly},
+  year =         {2017},
+  isbn =         {9781450349888},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3062341.3062363},
+  doi =          {10.1145/3062341.3062363},
+  abstract =     { The maturation of the Web platform has given rise to sophisticated
+                  and demanding Web applications such as interactive 3D
+                  visualization, audio and video software, and games. With that,
+                  efficiency and security of code on the Web has become more
+                  important than ever. Yet JavaScript as the only built-in language
+                  of the Web is not well-equipped to meet these requirements,
+                  especially as a compilation target.  Engineers from the four major
+                  browser vendors have risen to the challenge and collaboratively
+                  designed a portable low-level bytecode called WebAssembly. It
+                  offers compact representation, efficient validation and
+                  compilation, and safe low to no-overhead execution. Rather than
+                  committing to a specific programming model, WebAssembly is an
+                  abstraction over modern hardware, making it language-, hardware-,
+                  and platform-independent, with use cases beyond just the
+                  Web. WebAssembly has been designed with a formal semantics from the
+                  start. We describe the motivation, design and formal semantics of
+                  WebAssembly and provide some preliminary experience with
+                  implementations. },
+  booktitle =    {Proceedings of the 38th ACM SIGPLAN Conference on Programming
+                  Language Design and Implementation},
+  pages =        {185–200},
+  numpages =     {16},
+  keywords =     {programming languages, virtual machines, type systems, just-in-time
+                  compilers, assembly languages},
+  location =     {Barcelona, Spain},
+  series =       {PLDI 2017}
+}
