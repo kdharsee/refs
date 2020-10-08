@@ -3720,3 +3720,48 @@
   year = {2018},
   note = {{DDI} 0403E.d},
 }
+@INPROCEEDINGS{lift-steuwer-cgo2017,
+  author =       {M. {Steuwer} and T. {Remmelg} and C. {Dubach}},
+  booktitle =    {2017 IEEE/ACM International Symposium on Code Generation and
+                  Optimization (CGO)},
+  title =        {LIFT: A functional data-parallel IR for high-performance GPU code
+                  generation},
+  year =         {2017},
+  volume =       {},
+  number =       {},
+  pages =        {74-85},
+  abstract =     {Parallel patterns (e.g., map, reduce) have gained traction as an
+                  abstraction for targeting parallel accelerators and are a promising
+                  answer to the performance portability problem. However, compiling
+                  high-level programs into efficient low-level parallel code is
+                  challenging. Current approaches start from a high-level parallel IR
+                  and proceed to emit GPU code directly in one big step. Fixed
+                  strategies are used to optimize and map parallelism exploiting
+                  properties of a particular GPU generation leading to performance
+                  portability issues. We introduce the LIFT IR, a new data-parallel
+                  IR which encodes OpenCL-specific constructs as functional
+                  patterns. Our prior work has shown that this functional nature
+                  simplifies the exploration of optimizations and mapping of
+                  parallelism from portable high-level programs using
+                  rewrite-rules. This paper describes how LIFT IR programs are
+                  compiled into efficient OpenCL code. This is non-trivial as many
+                  performance sensitive details such as memory allocation, array
+                  accesses or synchronization are not explicitly represented in the
+                  LIFT IR. We present techniques which overcome this challenge by
+                  exploiting the pattern's high-level semantics. Our evaluation shows
+                  that the LIFT IR is flexible enough to express GPU programs with
+                  complex optimizations achieving performance on par with manually
+                  optimized code.},
+  keywords =     {graphics processing units;optimisation;parallel
+                  processing;performance evaluation;program compilers;functional
+                  data-parallel IR;high-performance GPU code generation;parallel
+                  patterns;gained traction;parallel accelerators;performance
+                  portability problem;compiling high-level programs;low-level
+                  parallel code;GPU generation;functional patterns;portable
+                  high-level programs;OpenCL code;complex optimizations;Graphics
+                  processing units;Optimization;Parallel
+                  processing;Semantics;Arrays;Resource management;Synchronization},
+  doi =          {10.1109/CGO.2017.7863730},
+  ISSN =         {},
+  month =        {Feb},
+}
