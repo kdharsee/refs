@@ -3849,37 +3849,16 @@
   location =     {Phoenix, AZ, USA},
   series =       {PLDI 2019}
 }
-@inproceedings{10.1145/1693453.1693470,
-author = {Baghsorkhi, Sara S. and Delahaye, Matthieu and Patel, Sanjay J. and Gropp, William D. and Hwu, Wen-mei W.},
-title = {An Adaptive Performance Modeling Tool for GPU Architectures},
-year = {2010},
-isbn = {9781605588773},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/1693453.1693470},
-doi = {10.1145/1693453.1693470},
-abstract = {This paper presents an analytical model to predict the performance ofgeneral-purpose applications on a GPU architecture. The model is designed to provide performance information to an auto-tuning compiler and assist it in narrowing down the search to the more promising implementations. It can also be incorporated into a tool to help programmers better assess the performance bottlenecks in their code. We analyze each GPU kernel and identify how the kernel exercises major GPU microarchitecture features. To identify the performance bottlenecks accurately, we introduce an abstract interpretation of a GPU kernel, work flow graph, based on which we estimate the execution time of a GPU kernel. We validated our performance model on the NVIDIA GPUs using CUDA (Compute Unified Device Architecture). For this purpose, we used data parallel benchmarks that stress different GPU microarchitecture events such as uncoalesced memory accesses, scratch-pad memory bank conflicts, and control flow divergence, which must be accurately modeled but represent challenges to the analytical performance models. The proposed model captures full system complexity and shows high accuracy in predicting the performance trends of different optimized kernel implementations. We also describe our approach to extracting the performance model automatically from a kernel code.},
-booktitle = {Proceedings of the 15th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
-pages = {105–114},
-numpages = {10},
-keywords = {gpu, performance estimation, parallel programming, analytical model},
-location = {Bangalore, India},
-series = {PPoPP '10}
-}
-
-@article{baghsorkhi-ppopp2010,
+@inproceedings{baghsorkhi-ppopp2010,
   author =       {Baghsorkhi, Sara S. and Delahaye, Matthieu and Patel, Sanjay J. and
                   Gropp, William D. and Hwu, Wen-mei W.},
   title =        {An Adaptive Performance Modeling Tool for GPU Architectures},
   year =         {2010},
-  issue_date =   {May 2010},
+  isbn =         {9781605588773},
   publisher =    {Association for Computing Machinery},
   address =      {New York, NY, USA},
-  volume =       {45},
-  number =       {5},
-  issn =         {0362-1340},
-  url =          {https://doi.org/10.1145/1837853.1693470},
-  doi =          {10.1145/1837853.1693470},
+  url =          {https://doi.org/10.1145/1693453.1693470},
+  doi =          {10.1145/1693453.1693470},
   abstract =     {This paper presents an analytical model to predict the performance
                   ofgeneral-purpose applications on a GPU architecture. The model is
                   designed to provide performance information to an auto-tuning
@@ -3901,11 +3880,13 @@ series = {PPoPP '10}
                   accuracy in predicting the performance trends of different
                   optimized kernel implementations. We also describe our approach to
                   extracting the performance model automatically from a kernel code.},
-  journal =      {SIGPLAN Not.},
-  month =        jan,
+  booktitle =    {Proceedings of the 15th ACM SIGPLAN Symposium on Principles and
+                  Practice of Parallel Programming},
   pages =        {105–114},
   numpages =     {10},
-  keywords =     {parallel programming, analytical model, performance estimation,
-                  gpu}
+  keywords =     {gpu, performance estimation, parallel programming, analytical
+                  model},
+  location =     {Bangalore, India},
+  series =       {PPoPP '10}
 }
 
