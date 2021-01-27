@@ -3954,3 +3954,44 @@
   ISSN =         {2375-1207},
   month =        {May},
 }
+
+@inproceedings{gross-ashes2019,
+  author =       {Gross, Mathieu and Jacob, Nisha and Zankl, Andreas and
+                  Sigl, Georg},
+  title =        {Breaking TrustZone Memory Isolation through Malicious
+                  Hardware on a Modern FPGA-SoC},
+  year =         {2019},
+  isbn =         {9781450368391},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3338508.3359568},
+  doi =          {10.1145/3338508.3359568},
+  abstract =     {FPGA-SoCs are heterogeneous computing systems consisting
+                  of reconfigurable hardware and high performance
+                  processing units. This combination enables a flexible
+                  design methodology for embedded systems. However, the
+                  sharing of resources between these heterogeneous systems
+                  opens the door to attacks from one system on the
+                  other. This work considers Direct Memory Access attacks
+                  from a malicious hardware block inside the reconfigurable
+                  logic on the CPU. Previous works have shown similar
+                  attacks on FPGA-SoCs containing no memory isolation
+                  between the FPGA and the CPU. Our work studies the same
+                  idea on a system based on the Xilinx Zynq Ultrascale+
+                  architecture. This platform contains memory isolation
+                  mechanisms such as a system memory management unit,
+                  memory protection units and supports ARM TrustZone
+                  technology. Despite the existence of these protection
+                  mechanisms, the two attacks presented in this work show
+                  that a malicious hardware block can still interfere with
+                  a security critical task executed on the CPU inside ARM
+                  TrustZone},
+  booktitle =    {Proceedings of the 3rd ACM Workshop on Attacks and
+                  Solutions in Hardware Security Workshop},
+  pages =        {3–12},
+  numpages =     {10},
+  keywords =     {memory isolation, hardware trojan, trusted execution
+                  environment, trustzone, fpga-socs, dma attack},
+  location =     {London, United Kingdom},
+  series =       {ASHES'19}
+}
