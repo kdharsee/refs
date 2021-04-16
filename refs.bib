@@ -4308,3 +4308,42 @@
                   android, buffer overflow},
   pages =        {346--360},
 }
+@ARTICLE{loop-wang-tifs2019,
+  author =       {C. {Wang} and B. {Chen} and Y. {Liu} and H. {Wu}},
+  journal =      {IEEE Transactions on Information Forensics and Security},
+  title =        {Layered Object-Oriented Programming: Advanced VTable
+                  Reuse Attacks on Binary-Level Defense},
+  year =         {2019},
+  volume =       {14},
+  number =       {3},
+  pages =        {693-708},
+  abstract =     {Vtable reuse attack, as a novel type of code reuse
+                  attacks, is introduced to bypass most binary-level
+                  control flow integrity enforcement and vtable integrity
+                  enforcement. So far, two binary-level defenses (TypeArmor
+                  and vfGuard) are proposed to defend against vtable reuse
+                  attacks. Both techniques use semantic information as the
+                  control flow integrity enforcement policy, i.e.,
+                  TypeArmor and vfGuard utilize argument register count and
+                  dispatch offset at virtual callsite as the signature to
+                  check the validity of target functions, respectively. In
+                  this paper, we propose layered object-oriented
+                  programming (LOOP), an advanced vtable reuse attack, to
+                  show that the coarse-grained control flow integrity
+                  strategies are still vulnerable to vtable reuse
+                  attacks. In LOOP, we introduce argument expansion gadgets
+                  and transfer gadgets to, respectively, bypass TypeArmor
+                  and vfGuard. We generalize the characteristics of both
+                  gadgets and develop a tool to discover them at the binary
+                  level. We demonstrated that under the protection of
+                  TypeArmor and vfGuard, Firefox, Adobe Flash Player, and
+                  Internet Explorer are all vulnerable to LOOP
+                  attacks. Furthermore, we show the availability of
+                  argument expansion gadgets and transfer gadgets in common
+                  software or libraries.},
+  keywords =     {Data security;Object oriented programming;Vtable reuse
+                  attacks;control flow integrity},
+  doi =          {10.1109/TIFS.2018.2855648},
+  ISSN =         {1556-6021},
+  month =        {March},
+}
