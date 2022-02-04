@@ -4133,7 +4133,7 @@
   author =       {T. {Trippel} and K. G. {Shin} and K. B. {Bush} and
                   M. {Hicks}},
   booktitle =    {2020 IEEE Symposium on Security and Privacy (SP)},
-  title =        {ICAS: an Extensible Framework for Estimating the
+  title =        {{ICAS}: an Extensible Framework for Estimating the
                   Susceptibility of IC Layouts to Additive Trojans},
   year =         {2020},
   volume =       {},
@@ -4429,4 +4429,271 @@
   doi =          {10.7873/DATE.2015.1102},
   ISSN =         {1558-1101},
   month =        {March},
+}
+@INPROCEEDINGS{bomberman-trippel-oakland2021,
+  author =       {Trippel, Timothy and Shin, Kang G. and Bush, Kevin B. and
+                  Hicks, Matthew},
+  booktitle =    {2021 IEEE Symposium on Security and Privacy (SP)},
+  title =        {Bomberman: Defining and Defeating Hardware Ticking
+                  Timebombs at Design-time},
+  year =         {2021},
+  volume =       {},
+  number =       {},
+  pages =        {970-986},
+  abstract =     {To cope with ever-increasing design complexities,
+                  integrated circuit designers increase both the size of
+                  their design teams and their reliance on third-party
+                  intellectual property (IP). Both come at the expense of
+                  trust: it is computationally infeasible to exhaustively
+                  verify that a design is free of all possible malicious
+                  modifications (i.e., hardware Trojans). Making matters
+                  worse, unlike software, hardware modifications are
+                  permanent: there is no "patching" mechanism for hardware;
+                  and powerful: they serve as a foothold for subverting
+                  software that sits above.To counter this threat, prior
+                  work uses both static and dynamic analysis techniques to
+                  verify hardware designs are Trojan-free. Unfortunately,
+                  researchers continue to reveal weaknesses in these
+                  "one-size-fits-all", heuristic-based approaches. Instead
+                  of attempting to detect all possible hardware Trojans, we
+                  take the first step in addressing the hardware Trojan
+                  threat in a divide-and-conquer fashion: defining and
+                  eliminating Ticking Timebomb Trojans (TTTs), forcing
+                  attackers to implement larger Trojan designs detectable
+                  via existing verification and side-channel defenses. Like
+                  many system-level software defenses (e.g., Address Space
+                  Layout Randomization (ASLR) and Data Execution Prevention
+                  (DEP)), our goal is to systematically constrict the
+                  hardware attacker’s design space.First, we construct a
+                  definition of TTTs derived from their functional
+                  behavior. Next, we translate this definition into
+                  fundamental components required to realize TTT behavior
+                  in hardware. Using these components, we expand the set of
+                  all known TTTs to a total of six variants—including
+                  unseen variants. Leveraging our definition, we design and
+                  implement a TTT-specific dynamic verification toolchain
+                  extension, called Bomber-man. Using four real-world
+                  hardware designs, we demonstrate Bomberman’s ability to
+                  detect all TTT variants, where previous defenses fail,
+                  with <1.2\% false positives.},
+  keywords =     {},
+  doi =          {10.1109/SP40001.2021.00052},
+  ISSN =         {2375-1207},
+  month =        {May},
+}
+@INPROCEEDINGS{sok-ewim-szekeres-oakland2013,
+  author =       {Szekeres, László and Payer, Mathias and Wei, Tao and
+                  Song, Dawn},
+  booktitle =    {2013 IEEE Symposium on Security and Privacy},
+  title =        {SoK: Eternal War in Memory},
+  year =         {2013},
+  volume =       {},
+  number =       {},
+  pages =        {48-62},
+  doi =          {10.1109/SP.2013.13}
+}
+@inproceedings{balasubramanian-hotos2017,
+  author =       {Balasubramanian, Abhiram and Baranowski, Marek S. and
+                  Burtsev, Anton and Panda, Aurojit and Rakamari\'{c},
+                  Zvonimir and Ryzhyk, Leonid},
+  title =        {System Programming in Rust: Beyond Safety},
+  year =         {2017},
+  isbn =         {9781450350686},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3102980.3103006},
+  doi =          {10.1145/3102980.3103006},
+  abstract =     {Rust is a new system programming language that offers a
+                  practical and safe alternative to C. Rust is unique in
+                  that it enforces safety without runtime overhead, most
+                  importantly, without the overhead of garbage
+                  collection. While zero-cost safety is remarkable on its
+                  own, we argue that the superpowers of Rust go beyond
+                  safety. In particular, Rust's linear type system enables
+                  capabilities that cannot be implemented efficiently in
+                  traditional languages, both safe and unsafe, and that
+                  dramatically improve security and reliability of system
+                  software. We show three examples of such capabilities:
+                  zero-copy software fault isolation, efficient static
+                  information flow analysis, and automatic
+                  checkpointing. While these capabilities have been in the
+                  spotlight of systems research for a long time, their
+                  practical use is hindered by high cost and complexity. We
+                  argue that with the adoption of Rust these mechanisms
+                  will become commoditized.},
+  booktitle =    {Proceedings of the 16th Workshop on Hot Topics in
+                  Operating Systems},
+  pages =        {156–161},
+  numpages =     {6},
+  location =     {Whistler, BC, Canada},
+  series =       {HotOS '17}
+}
+@techreport{merigoux-inria2021,
+  TITLE =        {{Hacspec: succinct, executable, verifiable specifications
+                  for high-assurance cryptography embedded in Rust}},
+  AUTHOR =       {Merigoux, Denis and Kiefer, Franziskus and Bhargavan,
+                  Karthikeyan},
+  URL =          {https://hal.inria.fr/hal-03176482},
+  TYPE =         {Technical Report},
+  INSTITUTION =  {{Inria}},
+  YEAR =         {2021},
+  MONTH =        Mar,
+  PDF =          {https://hal.inria.fr/hal-03176482/file/main.pdf},
+  HAL_ID =       {hal-03176482},
+  HAL_VERSION =  {v1},
+}
+@misc{openethereum-github,
+  title =        "OpenEthereum Project",
+  url =          "https://openethereum.github.io/",
+  note =         "https://openethereum.github.io/"
+}
+@misc{ret2usr:cve,
+  Author = {MITRE},
+  Title = {{CVE-2009-1897: Linux Kernel Privilege Escalation Vulnerability}},
+  Month = {June},
+  Year = {2009},
+  howpublished = "\url{http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1897}",
+  note = "[Online; accessed 11-March-2019]",
+}
+@misc{cve-2019-17006,
+  Author = {MITRE},
+  Title = {{CVE-2019-17006: Network Security Services Missing Length Checks}},
+  Month = {June},
+  Year = {2009},
+  howpublished = "\url{https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17006}",
+  note = "[Online; accessed 31-Jan-2022]",
+}
+@misc{cve-2015-9028,
+  Author = {MITRE},
+  Title = {{CVE-2015-9028: Linux Kernel Crypto Buffer Overflow}},
+  Month = {June},
+  Year = {2009},
+  howpublished = "\url{https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-9028}",
+  note = "[Online; accessed 31-Jan-2022]",
+}
+@misc{cve-2006-0095,
+  Author = {MITRE},
+  Title = {{CVE-2006-0095: Linux Kernel Crypto Key Disclosure}},
+  Month = {June},
+  Year = {2009},
+  howpublished = "\url{http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1897}",
+  note = "[Online; accessed 31-Jan-2022]",
+}
+@misc{cve-2009-1897,
+  Author = {MITRE},
+  Title = {{CVE-2009-1897: Linux Kernel NULL Pointer Dereference Privilege
+  Escalation}},
+  Month = {June},
+  Year = {2009},
+  howpublished = "\url{https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1897}",
+  note = "[Online; accessed 31-Jan-2022]",
+}
+@INPROCEEDINGS{wordrev-li-host2013,
+  author =       {Li, Wenchao and Gascon, Adria and Subramanyan, Pramod and
+                  Tan, Wei Yang and Tiwari, Ashish and Malik, Sharad and
+                  Shankar, Natarajan and Seshia, Sanjit A.},
+  booktitle =    {2013 IEEE International Symposium on Hardware-Oriented
+                  Security and Trust (HOST)},
+  title =        {WordRev: Finding word-level structures in a sea of
+                  bit-level gates},
+  year =         {2013},
+  volume =       {},
+  number =       {},
+  pages =        {67-74},
+  abstract =     {Systems are increasingly being constructed from
+                  off-the-shelf components acquired through a globally
+                  distributed and untrusted supply chain. Often only
+                  post-synthesis gate-level netlists or actual silicons are
+                  available for security inspection. This makes reasoning
+                  about hardware trojans particularly challenging given the
+                  enormous scale of the problem. Currently, there is no
+                  mature methodology that can provide visibility into a
+                  bit-level design in terms of high-level components to
+                  allow more comprehensive analysis. In this paper, we
+                  present a systemic way of automatically deriving
+                  word-level structures from the gate-level netlist of a
+                  digital circuit. Our framework also provides the
+                  possibility for a user to specify sequences of word-level
+                  operations and it can extract the collection of gates
+                  corresponding to those operations. We demonstrate the
+                  effectiveness of our approach on a system-on-a-chip (SoC)
+                  design consisting of approximately 400,000 IBM 12SOI
+                  cells and several open-source designs.},
+  keywords =     {},
+  doi =          {10.1109/HST.2013.6581568},
+  ISSN =         {},
+  month =        {June},
+}
+@inproceedings{detrust-zhang-ccs2014,
+  author =       {Zhang, Jie and Yuan, Feng and Xu, Qiang},
+  title =        {DeTrust: Defeating Hardware Trust Verification with
+                  Stealthy Implicitly-Triggered Hardware Trojans},
+  year =         {2014},
+  isbn =         {9781450329576},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/2660267.2660289},
+  doi =          {10.1145/2660267.2660289},
+  abstract =     {Hardware Trojans (HTs) inserted at design time by
+                  malicious insiders on the design team or third-party
+                  intellectual property (IP) providers pose a serious
+                  threat to the security of computing systems. Researchers
+                  have proposed several hardware trust verification
+                  techniques to mitigate such threats, and some of them are
+                  shown to be able to effectively flag all suspicious HTs
+                  implemented in the Trust-Hub hardware backdoor benchmark
+                  suite. No doubt to say, adversaries would adjust their
+                  tactics of attacks accordingly and it is hence essential
+                  to examine whether new types of HTs can be designed to
+                  defeat these hardware trust verification techniques. In
+                  this paper, we present a systematic HT design methodology
+                  to achieve the above objective, namely
+                  emph{DeTrust}. Given an HT design, DeTrust keeps its
+                  original malicious behavior while making the HT resistant
+                  to state-of-the-art hardware trust verification
+                  techniques by manipulating its trigger designs. To be
+                  specific, DeTrust implements stealthy implicit triggers
+                  for HTs by carefully spreading the trigger logic into
+                  multiple sequential levels and combinational logic blocks
+                  and combining the trigger logic with the normal logic, so
+                  that they are not easily differentiable from normal
+                  logic. As shown in our experimental results, adversaries
+                  can easily employ DeTrust to evade hardware trust
+                  verification.We close with a discussion on how to extend
+                  existing solutions to alleviate the threat posed by
+                  DeTrust. However, they generally suffer from high
+                  computational complexity, calling for more advanced
+                  techniques to ensure hardware trust.},
+  booktitle =    {Proceedings of the 2014 ACM SIGSAC Conference on Computer
+                  and Communications Security},
+  pages =        {153–166},
+  numpages =     {14},
+  keywords =     {implicit trigger, hardware security, backdoors, hardware
+                  trojan},
+  location =     {Scottsdale, Arizona, USA},
+  series =       {CCS '14}
+}
+@misc{indexing-rustlang,
+  Title =        {{The Rust Reference: Array and Index Expressions}},
+  howpublished =
+                  "\url{https://doc.rust-lang.org/reference/expressions/array-expr.html#array-and-slice-indexing-expressions}",
+  note =         "[Online; accessed 30-Dec-2021]",
+}
+
+@inproceedings {cain-barresi-woot2015,
+author = {Antonio Barresi and Kaveh Razavi and Mathias Payer and Thomas R. Gross},
+title = {{CAIN}: Silently Breaking {ASLR} in the Cloud},
+booktitle = {9th USENIX Workshop on Offensive Technologies (WOOT 15)},
+year = {2015},
+address = {Washington, D.C.},
+url = {https://www.usenix.org/conference/woot15/workshop-program/presentation/barresi},
+publisher = {USENIX Association},
+month = aug,
+}
+
+@misc{exploit-mitigation-rustlang,
+  Title =        {{The rustc book: Exploit Mitigations}},
+  howpublished =
+                  "\url{https://doc.rust-lang.org/beta/rustc/exploit-mitigations.html}",
+  note =         "[Online; accessed 30-Dec-2021]",
 }
