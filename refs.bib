@@ -1290,7 +1290,7 @@
                   {https://www.usenix.org/conference/usenixsecurity18/presentation/dong},
 }
 
-@inproceedings{fanci:waksman:ccs2013,
+@inproceedings{fanci-waksman-ccs2013,
   author =       {Waksman, Adam and Suozzo, Matthew and Sethumadhavan, Simha},
   title =        {FANCI: Identification of Stealthy Malicious Logic Using Boolean
                   Functional Analysis},
@@ -4696,4 +4696,86 @@ month = aug,
   howpublished =
                   "\url{https://doc.rust-lang.org/beta/rustc/exploit-mitigations.html}",
   note =         "[Online; accessed 30-Dec-2021]",
+}
+@INPROCEEDINGS{qifverilog-guo-host2019,
+  author =       {Guo, Xiaolong and Dutta, Raj Gautam and He, Jiaji and
+                  Tehranipoor, Mark M. and Jin, Yier},
+  booktitle =    {2019 IEEE International Symposium on Hardware Oriented
+                  Security and Trust (HOST)},
+  title =        {QIF-Verilog: Quantitative Information-Flow based Hardware
+                  Description Languages for Pre-Silicon Security
+                  Assessment},
+  year =         {2019},
+  volume =       {},
+  number =       {},
+  pages =        {91-100},
+  abstract =     {Hardware vulnerabilities are often due to design mistakes
+                  because the designer does not sufficiently consider
+                  potential security vulnerabilities at the design
+                  stage. As a result, various security solutions have been
+                  developed to protect ICs, among which the language-based
+                  hardware security verification serves as a promising
+                  solution. The verification process will be performed
+                  while compiling the HDL of the design. However, similar
+                  to other formal verification methods, the language-based
+                  approach also suffers from scalability
+                  issue. Furthermore, existing solutions either lead to
+                  hardware overhead or are not designed for vulnerable or
+                  malicious logic detection. To alleviate these challenges,
+                  we propose a new language based framework, QIF-Verilog,
+                  to evaluate the trustworthiness of a hardware system at
+                  register transfer level (RTL). This framework introduces
+                  a quantified information flow (QIF) model and extends
+                  Verilog type systems to provide more expressiveness in
+                  presenting security rules; QIF is capable of checking the
+                  security rules given by the hardware designer. Secrets
+                  are labeled by the new type and then parsed to data flow,
+                  to which a QIF model will be applied. To demonstrate our
+                  approach, we design a compiler for QIF-Verilog and
+                  perform vulnerability analysis on benchmarks from
+                  Trust-Hub and OpenCore. We show that Trojans or design
+                  faults that leak information from circuit outputs can be
+                  detected automatically, and that our method evaluates the
+                  security of the design correctly.},
+  keywords =     {},
+  doi =          {10.1109/HST.2019.8740840},
+  ISSN =         {},
+  month =        {May},
+}
+
+@INPROCEEDINGS{defeatinguci-sturton-oakland2011,
+  author =       {Sturton, Cynthia and Hicks, Matthew and Wagner, David and
+                  King, Samuel T.},
+  booktitle =    {2011 IEEE Symposium on Security and Privacy},
+  title =        {Defeating UCI: Building Stealthy and Malicious Hardware},
+  year =         {2011},
+  volume =       {},
+  number =       {},
+  pages =        {64-77},
+  abstract =     {In previous work Hicks et al. proposed a method called
+                  Unused Circuit Identification (UCI) for detecting
+                  malicious backdoors hidden in circuits at design
+                  time. The UCI algorithm essentially looks for portions of
+                  the circuit that go unused during design-time testing and
+                  flags them as potentially malicious. In this paper we
+                  construct circuits that have malicious behavior, but that
+                  would evade detection by the UCI algorithm and still pass
+                  design-time test cases. To enable our search for such
+                  circuits, we define one class of malicious circuits and
+                  perform a bounded exhaustive enumeration of all circuits
+                  in that class. Our approach is simple and straight
+                  forward, yet it proves to be effective at finding
+                  circuits that can thwart UCI. We use the results of our
+                  search to construct a practical attack on an open-source
+                  processor. Our malicious backdoor allows any user-level
+                  program running on the processor to enter supervisor mode
+                  through the use of a secret â knock. We close with a
+                  discussion on what we see as a major challenge facing any
+                  future design-time malicious hardware detection scheme:
+                  identifying a sufficient class of malicious circuits to
+                  defend against.},
+  keywords =     {},
+  doi =          {10.1109/SP.2011.32},
+  ISSN =         {2375-1207},
+  month =        {May},
 }
