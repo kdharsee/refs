@@ -1243,7 +1243,7 @@
 }                  
 
 @misc{IntelErrata:7thGenFamily,
-  Author =       {\relax Intel Corporation},
+  Author =       {Intel Corporation},
   Title =        {7th Generation Intel{\textregistered} Processor Family
                   Specification Update},
   Number =       {334663-004},
@@ -3034,7 +3034,7 @@
   month =        {April},
 }
 
-@inproceedings{specs:hicks:asplos2015,
+@inproceedings{specs-hicks-asplos2015,
   author =       {Hicks, Matthew and Sturton, Cynthia and King, Samuel T. and Smith,
                   Jonathan M.},
   title =        {SPECS: A Lightweight Runtime Mechanism for Protecting Software from
@@ -3385,7 +3385,7 @@
   year =         "2007",
   publisher =    "Springer Berlin Heidelberg",
   address =      "Berlin, Heidelberg",
-  pages =        "568--582",
+3  pages =        "568--582",
   abstract =     "This paper presents a mechanised Hoare-style programming logic
                   framework for assembly level programs. The framework has been
                   designed to fit on top of operational semantics of realistically
@@ -5651,4 +5651,1562 @@ month = aug,
   doi =          {10.1109/VTS.2012.6231062},
   ISSN =         {2375-1053},
   month =        {April},
+}
+@inproceedings{chisel-bachrach-dac2012,
+  author =       {Bachrach, Jonathan and Vo, Huy and Richards, Brian and
+                  Lee, Yunsup and Waterman, Andrew and Avi\v{z}ienis, Rimas
+                  and Wawrzynek, John and Asanovi\'{c}, Krste},
+  title =        {Chisel: Constructing Hardware in a Scala Embedded
+                  Language},
+  year =         {2012},
+  isbn =         {9781450311991},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/2228360.2228584},
+  doi =          {10.1145/2228360.2228584},
+  abstract =     {In this paper we introduce Chisel, a new hardware
+                  construction language that supports advanced hardware
+                  design using highly parameterized generators and layered
+                  domain-specific hardware languages. By embedding Chisel
+                  in the Scala programming language, we raise the level of
+                  hardware design abstraction by providing concepts
+                  including object orientation, functional programming,
+                  parameterized types, and type inference. Chisel can
+                  generate a high-speed C++-based cycle-accurate software
+                  simulator, or low-level Verilog designed to map to either
+                  FPGAs or to a standard ASIC flow for synthesis. This
+                  paper presents Chisel, its embedding in Scala, hardware
+                  examples, and results for C++ simulation, Verilog
+                  emulation and ASIC synthesis.},
+  booktitle =    {Proceedings of the 49th Annual Design Automation
+                  Conference},
+  pages =        {1216–1225},
+  numpages =     {10},
+  keywords =     {CAD},
+  location =     {San Francisco, California},
+  series =       {DAC '12}
+}
+
+@INPROCEEDINGS{bluespec-nikhil-memocode2004,
+  author =       {Nikhil, R.},
+  booktitle =    {Proceedings. Second ACM and IEEE International Conference
+                  on Formal Methods and Models for Co-Design,
+                  2004. MEMOCODE '04.},
+  title =        {Bluespec System Verilog: efficient, correct RTL from high
+                  level specifications},
+  year =         {2004},
+  volume =       {},
+  number =       {},
+  pages =        {69-70},
+  abstract =     {Bluespec System Verilog is an EDL toolset for ASIC and
+                  FPGA design offering significantly higher productivity
+                  via a radically different approach to high-level
+                  synthesis. Many other attempts at high-level synthesis
+                  have tried to move the design language towards a more
+                  software-like specification of the behavior of the
+                  intended hardware. By means of code samples,
+                  demonstrations and measured results, we illustrate how
+                  Bluespec System Verilog, in an environment familiar to
+                  hardware designers, can significantly improve
+                  productivity without compromising generated hardware
+                  quality.},
+  keywords =     {},
+  doi =          {10.1109/MEMCOD.2004.1459818},
+  ISSN =         {},
+  month =        {June},
+}
+@article{fortis-guin-todaes2016,
+  author =       {Guin, Ujjwal and Shi, Qihang and Forte, Domenic and
+                  Tehranipoor, Mark M.},
+  title =        {FORTIS: A Comprehensive Solution for Establishing Forward
+                  Trust for Protecting IPs and ICs},
+  year =         {2016},
+  issue_date =   {September 2016},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  volume =       {21},
+  number =       {4},
+  issn =         {1084-4309},
+  url =          {https://doi.org/10.1145/2893183},
+  doi =          {10.1145/2893183},
+  abstract =     {With the advent of globalization in the semiconductor
+                  industry, it is necessary to prevent unauthorized usage
+                  of third-party IPs (3PIPs), cloning and unwanted
+                  modification of 3PIPs, and unauthorized production of
+                  ICs. Due to the increasing complexity of ICs,
+                  system-on-chip (SoC) designers use various 3PIPs in their
+                  design to reduce time-to-market and development costs,
+                  which creates a trust issue between the SoC designer and
+                  the IP owners. In addition, as the ICs are fabricated
+                  around the globe, the SoC designers give fabrication
+                  contracts to offshore foundries to manufacture ICs and
+                  have little control over the fabrication process,
+                  including the total number of chips
+                  fabricated. Similarly, the 3PIP owners lack control over
+                  the number of fabricated chips and/or the usage of their
+                  IPs in an SoC. Existing research only partially addresses
+                  the problems of IP piracy and IC overproduction, and to
+                  the best of our knowledge, there is no work that
+                  considers IP overuse. In this article, we present a
+                  comprehensive solution for preventing IP piracy and IC
+                  overproduction by assuring forward trust between all
+                  entities involved in the SoC design and fabrication
+                  process. We propose a novel design flow to prevent IC
+                  overproduction and IP overuse. We use an existing logic
+                  encryption technique to obfuscate the netlist of an SoC
+                  or a 3PIP and propose a modification to enable
+                  manufacturing tests before the activation of chips which
+                  is absolutely necessary to prevent overproduction. We
+                  have used asymmetric and symmetric key encryption, in a
+                  fashion similar to Pretty Good Privacy (PGP), to transfer
+                  keys from the SoC designer or 3PIP owners to the
+                  chips. In addition, we also propose to attach an IP
+                  digest (a cryptographic hash of the entire IP) to the
+                  header of an IP to prevent modification of the IP by the
+                  SoC designers. We have shown that our approach is
+                  resistant to various attacks with the cost of minimal
+                  area overhead.},
+  journal =      {ACM Trans. Des. Autom. Electron. Syst.},
+  month =        {may},
+  articleno =    {63},
+  numpages =     {20},
+  keywords =     {IP overuse, system-on-chip, IC overproduction,
+                  encryption, 3PIP, supply chain}
+}
+@INPROCEEDINGS{hu-iccad2017,
+  author =       {Hu, Wei and Zhang, Lu and Ardeshiricham, Armaiti and
+                  Blackstone, Jeremy and Hou, Bochuan and Tai, Yu and
+                  Kastner, Ryan},
+  booktitle =    {2017 IEEE/ACM International Conference on Computer-Aided
+                  Design (ICCAD)},
+  title =        {Why you should care about don't cares: Exploiting
+                  internal don't care conditions for hardware Trojans},
+  year =         {2017},
+  volume =       {},
+  number =       {},
+  pages =        {707-713},
+  abstract =     {Hardware Trojans are a significant security threat due to
+                  the globalization of hardware design and supply chain. We
+                  demonstrate a new type of hardware Trojan hidden behind
+                  internal don't care conditions. The proposed Trojans can
+                  pass through formal equivalence checking; they may reside
+                  after logic synthesis optimizations; and they are
+                  resilient to switching probability and side channel
+                  analysis. The new Trojans can create a surface for fault
+                  attack to retrieve secret information or downgrade
+                  performance by increasing power consumption. Experimental
+                  results show that these Trojans may stay after logic
+                  synthesis and that secret information can be retrieved
+                  using fault attack. We present detectability analysis and
+                  suggest synthesis optimizations as well as
+                  countermeasures that can help mitigate this new Trojan.},
+  keywords =     {},
+  doi =          {10.1109/ICCAD.2017.8203846},
+  ISSN =         {1558-2434},
+  month =        {Nov},
+}
+@INPROCEEDINGS{maliciouslut-krieg-iccad2016,
+  author =       {Krieg, Christian and Wolf, Clifford and Jantsch, Axel},
+  booktitle =    {2016 IEEE/ACM International Conference on Computer-Aided
+                  Design (ICCAD)},
+  title =        {Malicious LUT: A stealthy FPGA Trojan injected and
+                  triggered by the design flow},
+  year =         {2016},
+  volume =       {},
+  number =       {},
+  pages =        {1-8},
+  abstract =     {We present a novel type of Trojan trigger targeted at the
+                  field-programmable gate array (FPGA) design
+                  flow. Traditional triggers base on rare events, such as
+                  rare values or sequences. While in most cases these
+                  trigger circuits are able to hide a Trojan attack,
+                  exhaustive functional simulation and testing will reveal
+                  the Trojan due to violation of the specification. Our
+                  trigger behaves functionally and formally equivalent to
+                  the hardware description language (HDL) specification
+                  throughout the entire FPGA design flow, until the design
+                  is written by the place-and-route tool as bitstream
+                  configuration file. From then, Trojan payload is always
+                  on. We implement the trigger signal using a 4-input
+                  lookup table (LUT), each of the inputs connecting to the
+                  same signal. This lets us directly address the least
+                  significant bit (LSB) and most significant bit (MSB) of
+                  the LUT. With the remaining 14 bits, we realize a “magic”
+                  unary operation. This way, we are able to implement 16
+                  different Triggers. We demonstrate the attack with a
+                  simple example and discuss the effectiveness of the
+                  recent detection techniques unused circuit identification
+                  (UCI), functional analysis for nearly-unused circuit
+                  identification (FANCI) and VeriTrust in order to reveal
+                  our trigger.},
+  keywords =     {},
+  doi =          {10.1145/2966986.2967054},
+  ISSN =         {1558-2434},
+  month =        {Nov},
+}
+@misc{IPreuse-bailey-semieng2022,
+  title =        {Incremental Design Breakdown},
+  author =       {Bailey, Brian},
+  year =         {2022},
+  howpublished = "\url{https://semiengineering.com/incremental-design-breakdown/}",
+  note = "[Online; accessed 29-March-2022]",
+
+}
+@article{xiao-tdaes2016,
+  author =       {Xiao, K. and Forte, D. and Jin, Y. and Karri, R. and
+                  Bhunia, S. and Tehranipoor, M.},
+  title =        {Hardware Trojans: Lessons Learned after One Decade of
+                  Research},
+  year =         {2016},
+  issue_date =   {January 2017},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  volume =       {22},
+  number =       {1},
+  issn =         {1084-4309},
+  url =          {https://doi.org/10.1145/2906147},
+  doi =          {10.1145/2906147},
+  abstract =     {Given the increasing complexity of modern electronics and
+                  the cost of fabrication, entities from around the globe
+                  have become more heavily involved in all phases of the
+                  electronics supply chain. In this environment, hardware
+                  Trojans (i.e., malicious modifications or inclusions made
+                  by untrusted third parties) pose major security concerns,
+                  especially for those integrated circuits (ICs) and
+                  systems used in critical applications and cyber
+                  infrastructure. While hardware Trojans have been explored
+                  significantly in academia over the last decade, there
+                  remains room for improvement. In this article, we examine
+                  the research on hardware Trojans from the last decade and
+                  attempt to capture the lessons learned. A comprehensive
+                  adversarial model taxonomy is introduced and used to
+                  examine the current state of the art. Then the past
+                  countermeasures and publication trends are categorized
+                  based on the adversarial model and topic. Through this
+                  analysis, we identify what has been covered and the
+                  important problems that are underinvestigated. We also
+                  identify the most critical lessons for those new to the
+                  field and suggest a roadmap for future hardware Trojan
+                  research.},
+  journal =      {ACM Trans. Des. Autom. Electron. Syst.},
+  month =        {may},
+  articleno =    {6},
+  numpages =     {23},
+  keywords =     {attack model, Hardware security and trust,
+                  countermeasures, hardware Trojan attacks}
+}
+@article{hotspot-kotzmann-taco2008,
+  author =       {Kotzmann, Thomas and Wimmer, Christian and
+                  M\"{o}ssenb\"{o}ck, Hanspeter and Rodriguez, Thomas and
+                  Russell, Kenneth and Cox, David},
+  title =        {Design of the Java HotSpot™ Client Compiler for Java 6},
+  year =         {2008},
+  issue_date =   {May 2008},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  volume =       {5},
+  number =       {1},
+  issn =         {1544-3566},
+  url =          {https://doi.org/10.1145/1369396.1370017},
+  doi =          {10.1145/1369396.1370017},
+  abstract =     {Version 6 of Sun Microsystems' Java HotSpot™ VM ships
+                  with a redesigned version of the client just-in-time
+                  compiler that includes several research results of the
+                  last years. The client compiler is at the heart of the VM
+                  configuration used by default for interactive desktop
+                  applications. For such applications, low startup and
+                  pause times are more important than peak
+                  performance. This paper outlines the new architecture of
+                  the client compiler and shows how it interacts with the
+                  VM. It presents the intermediate representation that now
+                  uses static single-assignment (SSA) form and the linear
+                  scan algorithm for global register allocation. Efficient
+                  support for exception handling and deoptimization
+                  fulfills the demands that are imposed by the dynamic
+                  features of the Java programming language. The evaluation
+                  shows that the new client compiler generates better code
+                  in less time. The popular SPECjvm98 benchmark suite is
+                  executed 45% faster, while the compilation speed is also
+                  up to 40% better. This indicates that a carefully
+                  selected set of global optimizations can also be
+                  integrated in just-in-time compilers that focus on
+                  compilation speed and not on peak performance. In
+                  addition, the paper presents the impact of several
+                  optimizations on execution and compilation speed. As the
+                  source code is freely available, the Java HotSpot™ VM and
+                  the client compiler are the ideal basis for experiments
+                  with new feedback-directed optimizations in a
+                  production-level Java just-in-time compiler. The paper
+                  outlines research projects that add fast algorithms for
+                  escape analysis, automatic object inlining, and array
+                  bounds check elimination.},
+  journal =      {ACM Trans. Archit. Code Optim.},
+  month =        {may},
+  articleno =    {7},
+  numpages =     {32},
+  keywords =     {compiler, Java, register allocation, intermediate
+                  representation, deoptimization, optimization,
+                  just-in-time compilation}
+}
+@misc{indexing-rust,
+  Title =        {{The Rust Reference: Array and slice indexing expression}},
+  howpublished =
+                  "\url{https://doc.rust-lang.org/reference/expressions/array-expr.html#array-and-slice-indexing-expressions}",
+  note =         "[Online; accessed 29-Mar-2022]",
+}
+
+@misc{sloccount,
+  Title =        {{SLOCCount}},
+  howpublished =
+                  "\url{https://dwheeler.com/sloccount/}",
+  note =         "[Online; accessed 29-Mar-2022]",
+}
+
+@ARTICLE{fefet-dutta-ted2021,
+  author =       {Dutta, Sourav and Grisafe, Benjamin and Frentzel, Chloe
+                  and Enciso, Zephan and Jose, Matthew San and Smith,
+                  Jeffrey and Ni, Kai and Joshi, Siddharth and Datta,
+                  Suman},
+  journal =      {IEEE Transactions on Electron Devices},
+  title =        {Experimental Demonstration of Gate-Level Logic
+                  Camouflaging and Run-Time Reconfigurability Using
+                  Ferroelectric FET for Hardware Security},
+  year =         {2021},
+  volume =       {68},
+  number =       {2},
+  pages =        {516-522},
+  abstract =     {Outsourcing of integrated circuit (IC) manufacturing and
+                  increasing sophistication of IC reverse engineering
+                  techniques have unleashed security threats such as
+                  intellectual property (IP) theft and insertion of
+                  hardware Trojans. In this article, we propose and
+                  implement a run-time reconfigurable camouflage logic
+                  technology based on ferroelectric field-effect transistor
+                  (FeFET). The technology simultaneously obfuscates design
+                  IP from zero-trust foundry and untrusted testing facility
+                  and thwarts reverse engineering and counterfeiting
+                  threat. We fabricate for the first time an eight
+                  FeFET-based circuit block and demonstrate in silico
+                  gate-level camouflaging by implementing three Boolean
+                  logic functions—NOR, NAND, and XNOR—in the same circuit
+                  topology using threshold voltage ( ${V}_{\text {T}}$ )
+                  programming of FeFET. We perform circuit simulations
+                  using empirically calibrated models to estimate power,
+                  latency, and area overhead. Compared with recent proposal
+                  of programmable camouflage logic using hot-carrier
+                  injection (HCI), FeFET offers an overhead reduction of
+                  $2\times $ , $1.8\times $ , and $2.8\times $ in area,
+                  power, and delay, respectively.},
+  keywords =     {},
+  doi =          {10.1109/TED.2020.3045380},
+  ISSN =         {1557-9646},
+  month =        {Feb},
+}
+@INPROCEEDINGS{hund-oakland2013,
+  author =       {Hund, Ralf and Willems, Carsten and Holz, Thorsten},
+  booktitle =    {2013 IEEE Symposium on Security and Privacy},
+  title =        {Practical Timing Side Channel Attacks against Kernel
+                  Space ASLR},
+  year =         {2013},
+  volume =       {},
+  number =       {},
+  pages =        {191-205},
+  abstract =     {Due to the prevalence of control-flow hijacking attacks,
+                  a wide variety of defense methods to protect both user
+                  space and kernel space code have been developed in the
+                  past years. A few examples that have received widespread
+                  adoption include stack canaries, non-executable memory,
+                  and Address Space Layout Randomization (ASLR). When
+                  implemented correctly (i.e., a given system fully
+                  supports these protection methods and no information leak
+                  exists), the attack surface is significantly reduced and
+                  typical exploitation strategies are severely
+                  thwarted. All modern desktop and server operating systems
+                  support these techniques and ASLR has also been added to
+                  different mobile operating systems recently. In this
+                  paper, we study the limitations of kernel space ASLR
+                  against a local attacker with restricted privileges. We
+                  show that an adversary can implement a generic side
+                  channel attack against the memory management system to
+                  deduce information about the privileged address space
+                  layout. Our approach is based on the intrinsic property
+                  that the different caches are shared resources on
+                  computer systems. We introduce three implementations of
+                  our methodology and show that our attacks are feasible on
+                  four different x86-based CPUs (both 32- and 64-bit
+                  architectures) and also applicable to virtual
+                  machines. As a result, we can successfully circumvent
+                  kernel space ASLR on current operating
+                  systems. Furthermore, we also discuss mitigation
+                  strategies against our attacks, and propose and implement
+                  a defense solution with negligible performance overhead.},
+  keywords =     {},
+  doi =          {10.1109/SP.2013.23},
+  ISSN =         {1081-6011},
+  month =        {May},
+}
+@INPROCEEDINGS{angr-wang-secdev2017,
+  author =       {Wang, Fish and Shoshitaishvili, Yan},
+  booktitle =    {2017 IEEE Cybersecurity Development (SecDev)},
+  title =        {Angr - The Next Generation of Binary Analysis},
+  year =         {2017},
+  volume =       {},
+  number =       {},
+  pages =        {8-9},
+  abstract =     {Software is becoming increasingly more complex, and
+                  vul-nerabilities more subtle Better approaches are
+                  required to effectively analyze modern binaries,
+                  efficiently identify deeply buried defects, and
+                  intelligently assist human analysts with specific
+                  software reversing tasks Tons of good techniques and
+                  approaches regarding binary analysis have recently
+                  emerged from both academia and industry, many of which
+                  are fairly applicable to real-world binary research tasks
+                  However, due to the lack of a flexible and approachable
+                  binary analysis platform, testing and applying these
+                  techniques becomes a difficult job. angr is the
+                  next-generation binary analysis platform devel-oped by
+                  the SecLab of University of California, Santa Barbara It
+                  is flexible, easy to work with, cross-platform and
+                  cross-architecture, and has many techniques from academia
+                  already implemented and embedded inside In this course,
+                  we will start about the fundamental underpinnings of
+                  angr, dynamic symbolic execution, and static binary
+                  analysis We will then demonstrate best practices in doing
+                  symbolic execution and data dependence tracking in angr
+                  In the end, we will show how angr can assist in bug
+                  hunting All demos will be performed on CTF challenges and
+                  real-world programs.},
+  keywords =     {},
+  doi =          {10.1109/SecDev.2017.14},
+  ISSN =         {},
+  month =        {Sep.},
+}
+@misc{iterators-rust,
+  Title =        {{The Rust Programming Language: Functional Language Features: Iterators and Closures}},
+  howpublished =
+                  "\url{https://doc.rust-lang.org/book/ch13-02-iterators.html}",
+  note =         "[Online; accessed 31-Mar-2022]",
+}
+@inproceedings{roptee-lee-usenixsec2017,
+  author =       {Jaehyuk Lee and Jinsoo Jang and Yeongjin Jang and Nohyun
+                  Kwak and Yeseul Choi and Changho Choi and Taesoo Kim and
+                  Marcus Peinado and Brent ByungHoon Kang},
+  title =        {Hacking in Darkness: Return-oriented Programming against
+                  Secure Enclaves},
+  booktitle =    {26th USENIX Security Symposium (USENIX Security 17)},
+  year =         {2017},
+  isbn =         {978-1-931971-40-9},
+  address =      {Vancouver, BC},
+  pages =        {523--539},
+  url =
+                  {https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/lee-jaehyuk},
+  publisher =    {USENIX Association},
+  month =        aug,
+}
+@INPROCEEDINGS{vericoq-iscas2015,
+  author =       {Bidmeshki, Mohammad-Mahdi and Makris, Yiorgos},
+  booktitle =    {2015 IEEE International Symposium on Circuits and Systems
+                  (ISCAS)},
+  title =        {VeriCoq: A Verilog-to-Coq converter for proof-carrying
+                  hardware automation},
+  year =         {2015},
+  volume =       {},
+  number =       {},
+  pages =        {29-32},
+  abstract =     {Proof carrying hardware intellectual property (PCHIP)
+                  introduces a new framework in which a hardware
+                  (semiconductor) Intellectual Property (IP) is accompanied
+                  by formal proofs of certain security-related properties,
+                  ensuring that the acquired IP is trustworthy and free
+                  from hardware Trojans. In the PCHIP framework, conversion
+                  of the design from a hardware description language (HDL)
+                  to a formal representation is an essential step. Towards
+                  automating this process, herein we introduce VeriCoq, a
+                  converter of designs described in Register Transfer Level
+                  (RTL) Verilog to their corresponding representation in
+                  the Coq theorem proving language, based on the rules
+                  defined in the PCHIP framework. VeriCoq supports most of
+                  the synthesizable Verilog constructs and is the first
+                  step towards automating the entire framework, in order to
+                  simplify adoption of PCHIP by hardware IP developers and
+                  consumers and, thereby, increase IP trustworthiness.},
+  keywords =     {},
+  doi =          {10.1109/ISCAS.2015.7168562},
+  ISSN =         {2158-1525},
+  month =        {May},
+}
+@INPROCEEDINGS{nvmtrojan-khan-date2019,
+  author =       {Imtiaz Khan, Mohammad Nasim and Nagarajan, Karthikeyan
+                  and Ghosh, Swaroop},
+  booktitle =    {2019 Design, Automation \& Test in Europe Conference \&
+                  Exhibition (DATE)},
+  title =        {Hardware Trojans in Emerging Non-Volatile Memories},
+  year =         {2019},
+  volume =       {},
+  number =       {},
+  pages =        {396-401},
+  abstract =     {Emerging Non-Volatile Memories (NVMs) possess unique
+                  characteristics that make them a top target for deploying
+                  Hardware Trojan. In this paper, we investigate such knobs
+                  that can be targeted by the Trojans to cause read/write
+                  failure. For example, NVM read operation depends on clamp
+                  voltage which the adversary can manipulate. Adversary can
+                  also use ground bounce generated in NVM write operation
+                  to hamper another parallel read/write operation. We have
+                  designed a Trojan that can be activated and deactivated
+                  by writing a specific data pattern to a particular
+                  address. Once activated, the Trojan can couple two
+                  predetermined addresses and data written to one address
+                  (victim's address space) will get copied to another
+                  address (adversary's address space). This will leak
+                  sensitive information e.g., encryption keys. Adversary
+                  can also create read/write failure to predetermined
+                  locations (fault injection). Simulation results indicate
+                  that the Trojan can be activated by writing a specific
+                  data pattern to a specific address for 1956 times. Once
+                  activated, the attack duration can be as low as 52.4μs
+                  and as high as 1.1ms (with reset-enable trigger). We also
+                  show that the proposed Trojan can scale down the clamp
+                  voltage by 400mV from optimum value which is sufficient
+                  to inject specific data-polarity read error. We also
+                  propose techniques to inject noise in the ground/power
+                  rail to cause read/write failure.},
+  keywords =     {},
+  doi =          {10.23919/DATE.2019.8714843},
+  ISSN =         {1558-1101},
+  month =        {March},
+}
+@InProceedings{sugawara-ches2014,
+  author =       "Sugawara, Takeshi and Suzuki, Daisuke and Fujii, Ryoichi
+                  and Tawa, Shigeaki and Hori, Ryohei and Shiozaki, Mitsuru
+                  and Fujino, Takeshi",
+  editor =       "Batina, Lejla and Robshaw, Matthew",
+  title =        "Reversing Stealthy Dopant-Level Circuits",
+  booktitle =    "Cryptographic Hardware and Embedded Systems -- CHES 2014",
+  year =         "2014",
+  publisher =    "Springer Berlin Heidelberg",
+  address =      "Berlin, Heidelberg",
+  pages =        "112--126",
+  abstract =     "A successful detection of the stealthy dopant-level
+                  circuit (trojan), proposed by Becker et al. at CHES 2013
+                  [1], is reported. Contrary to an assumption made by
+                  Becker et al., dopant types in active region are visible
+                  with either scanning electron microscopy (SEM) or focused
+                  ion beam (FIB) imaging. The successful measurement is
+                  explained by an LSI failure analysis technique called the
+                  passive voltage contrast [2]. The experiments are
+                  conducted by measuring a dedicated chip. The chip uses
+                  the diffusion programmable device [3]: an
+                  anti-reverse-engineering technique by the same principle
+                  as the stealthy dopant-level trojan. The chip is
+                  delayered down to the contact layer, and images are taken
+                  with (1) an optical microscope, (2) SEM, and (3) FIB. As
+                  a result, the four possible dopant-well combinations,
+                  namely (i) p+/n-well, (ii) p+/p-well, (iii) n+/n-well and
+                  (iv) n+/p-well are distinguishable in the SEM
+                  images. Partial but sufficient detection is also achieved
+                  with FIB. Although the stealthy dopant-level circuits are
+                  visible, however, they potentially make a detection
+                  harder. That is because the contact layer should be
+                  measured. We show that imaging the contact layer is at
+                  most 16-times expensive than that of a metal layer in
+                  terms of the number of images.",
+  isbn =         "978-3-662-44709-3"
+}
+
+@inproceedings{hu-iccad2018,
+  author =       {Hu, Wei and Ardeshiricham, Armaiti and Gobulukoglu,
+                  Mustafa S and Wang, Xinmu and Kastner, Ryan},
+  title =        {Property Specific Information Flow Analysis for Hardware
+                  Security Verification},
+  year =         {2018},
+  publisher =    {IEEE Press},
+  url =          {https://doi.org/10.1145/3240765.3240839},
+  doi =          {10.1145/3240765.3240839},
+  abstract =     {Hardware information flow analysis detects security
+                  vulnerabilities resulting from unintended design flaws,
+                  timing channels, and hardware Trojans. These information
+                  flow models are typically generated in a general way,
+                  which includes a significant amount of redundancy that is
+                  irrelevant to the specified security properties. In this
+                  work, we propose a property specific approach for
+                  information flow security. We create information flow
+                  models tailored to the properties to be verified by
+                  performing a property specific search to identify
+                  security critical paths. This helps find suspicious
+                  signals that require closer inspection and quickly
+                  eliminates portions of the design that are free of
+                  security violations. Our property specific trimming
+                  technique reduces the complexity of the security model;
+                  this accelerates security verification and restricts
+                  potential security violations to a smaller region which
+                  helps quickly pinpoint hardware security
+                  vulnerabilities.},
+  booktitle =    {2018 IEEE/ACM International Conference on Computer-Aided
+                  Design (ICCAD)},
+  pages =        {1–8},
+  numpages =     {8},
+  location =     {San Diego, CA, USA}
+}
+@ARTICLE{hu-computer2016,
+  author =       {Hu, Wei and Mao, Baolei and Oberg, Jason and Kastner,
+                  Ryan},
+  journal =      {Computer},
+  title =        {Detecting Hardware Trojans with Gate-Level
+                  Information-Flow Tracking},
+  year =         {2016},
+  volume =       {49},
+  number =       {8},
+  pages =        {44-52},
+  abstract =     {A method based on information-flow tracking uses
+                  gate-level logic to detect hardware Trojans that violate
+                  the confidentiality and integrity properties of
+                  third-party IP cores. Experiments on trust-HUB benchmarks
+                  show that the method reveals Trojan behavior and
+                  unintentional design vulnerabilities that functional
+                  testing cannot pinpoint.},
+  keywords =     {},
+  doi =          {10.1109/MC.2016.225},
+  ISSN =         {1558-0814},
+  month =        {Aug},
+}
+@INPROCEEDINGS{nahiyan-itc2017,
+  author =       {Nahiyan, Adib and Sadi, Mehdi and Vittal, Rahul and
+                  Contreras, Gustavo and Forte, Domenic and Tehranipoor,
+                  Mark},
+  booktitle =    {2017 IEEE International Test Conference (ITC)},
+  title =        {Hardware trojan detection through information flow
+                  security verification},
+  year =         {2017},
+  volume =       {},
+  number =       {},
+  pages =        {1-10},
+  doi =          {10.1109/TEST.2017.8242062}
+}
+@INPROCEEDINGS{guo-date2019,
+  author =       {Guo, Xiaolong and Zhu, Huifeng and Jin, Yier and Zhang,
+                  Xuan},
+  booktitle =    {2019 Design, Automation \& Test in Europe Conference \&
+                  Exhibition (DATE)},
+  title =        {When Capacitors Attack: Formal Method Driven Design and
+                  Detection of Charge-Domain Trojans},
+  year =         {2019},
+  volume =       {},
+  number =       {},
+  pages =        {1727-1732},
+  abstract =     {The rapid growth and globalization of the integrated
+                  circuit (IC) industry put the threat of hardware Trojans
+                  (HTs) front and center among all security concerns in the
+                  IC supply chain. Current Trojan detection approaches
+                  always assume HTs are composed of digital
+                  circuits. However, recent demonstrations of analog
+                  attacks, such as A2 and Rowhammer, invalidate the digital
+                  assumption in previous HT detection or testing
+                  methods. At the system level, attackers can utilize the
+                  analog properties of the underlying circuits such as
+                  charge-sharing and capacitive coupling effects to create
+                  information leakage paths. These new capacitor-based
+                  vulnerabilities are rarely covered in digital
+                  testings. To address these stealthy yet harmful threats,
+                  we identify a large class of such capacitor-enabled
+                  attacks and define them as charge-domain Trojans. We are
+                  able to abstract the detailed charge-domain models for
+                  these Trojans and expose the circuit-level properties
+                  that critically contribute to their information leakage
+                  paths. Aided by the abstract models, an information flow
+                  tracking (IFT) based solution is developed to detect
+                  charge-domain leakage paths and then identify the
+                  charge-domain Trojans/vulnerabilities. Our proposed
+                  method is validated on an experimental RISC
+                  microcontroller design injected with different variants
+                  of charge-domain Trojans. We demonstrate that successful
+                  detection can be accomplished with an automatic tool
+                  which realizes the IFT-based solution.},
+  keywords =     {},
+  doi =          {10.23919/DATE.2019.8714906},
+  ISSN =         {1558-1101},
+  month =        {March},
+}
+@InProceedings{SPIN:SOSP95,
+  author =       {Brian Bershad and Stefan Savage and Przemyslaw Pardyak
+                  and Emin Gun Sirer and David Becker and Marc Fiuczynski
+                  and Craig Chambers and Susan Eggers},
+  title =        {Extensibility, {S}afety and {P}erformance in the {SPIN}
+                  {O}perating {S}ystem},
+  booktitle =    SOSP,
+  year =         {1995},
+  address =      {Copper Mountain, CO, USA},
+}
+
+@inproceedings{Aiken:Singularity:MSPC06,
+  author =       {Aiken, Mark and F\"{a}hndrich, Manuel and Hawblitzel,
+                  Chris and Hunt, Galen and Larus, James},
+  title =        {Deconstructing Process Isolation},
+  booktitle =    {Proceedings of the 2006 Workshop on Memory System
+                  Performance and Correctness},
+  series =       {MSPC '06},
+  year =         {2006},
+  isbn =         {1-59593-578-9},
+  location =     {San Jose, California},
+  pages =        {1--10},
+  numpages =     {10},
+  url =          {http://doi.acm.org/10.1145/1178597.1178599},
+  doi =          {10.1145/1178597.1178599},
+  acmid =        {1178599},
+  publisher =    {ACM},
+  address =      {New York, NY, USA},
+  keywords =     {hardware isolated process (HIP), hardware protection
+                  domain, singularity, software isolated process (SIP)},
+}
+
+@inproceedings{Verve:PLDI10,
+  author =       {Yang, Jean and Hawblitzel, Chris},
+  title =        {Safe to the last instruction: automated verification of a
+                  type-safe operating system},
+  booktitle =    {Proceedings of the 2010 ACM SIGPLAN conference on
+                  Programming language design and implementation},
+  series =       {PLDI '10},
+  year =         {2010},
+  isbn =         {978-1-4503-0019-3},
+  location =     {Toronto, Ontario, Canada},
+  numpages =     {12},
+  doi =          {10.1145/1806596.1806610},
+  acmid =        {1806610},
+  publisher =    {ACM},
+  address =      {New York, NY, USA},
+  keywords =     {operating system, run-time system, type safety,
+                  verification},
+}
+@ARTICLE{killswitch-spectrum2008,
+  author =       {Adee, Sally},
+  journal =      {IEEE Spectrum},
+  title =        {The Hunt For The Kill Switch},
+  year =         {2008},
+  volume =       {45},
+  number =       {5},
+  pages =        {34-39},
+  abstract =     {This paper has described the issues on electronic
+                  circuits which are made for military equipments.The DoD
+                  of U.S. recently launched its most ambitious program yet
+                  to verify the integrity of the electronics that will
+                  underpin future additions to its arsenal. The Defense
+                  Advanced Research Projects Agency (DARPA), the Pentagon's
+                  R&D wing, and released details about a three-year
+                  initiative it calls the Trust in Integrated Circuits
+                  program. The findings from the program could give the
+                  military and defense contractors who make sensitive
+                  microelectronics like the weapons systems for the F-35 a
+                  guaranteed method of determining whether their chips have
+                  been compromised. The Trust program started its
+                  prequalifying rounds by sending to three contractors four
+                  identical versions of a chip that contained unspecified
+                  malicious circuitry, though U.S. military consumes only
+                  1% of world's integrated circuits.},
+  keywords =     {},
+  doi =          {10.1109/MSPEC.2008.4505310},
+  ISSN =         {1939-9340},
+  month =        {May},
+}
+@inproceedings{seibert-ccs2014,
+  author =       {Seibert, Jeff and Okhravi, Hamed and S\"{o}derstr\"{o}m,
+                  Eric},
+  title =        {Information Leaks Without Memory Disclosures: Remote Side
+                  Channel Attacks on Diversified Code},
+  year =         {2014},
+  isbn =         {9781450329576},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/2660267.2660309},
+  doi =          {10.1145/2660267.2660309},
+  abstract =     {Code diversification has been proposed as a technique to
+                  mitigate code reuse attacks, which have recently become
+                  the predominant way for attackers to exploit memory
+                  corruption vulnerabilities. As code reuse attacks require
+                  detailed knowledge of where code is in memory,
+                  diversification techniques attempt to mitigate these
+                  attacks by randomizing what instructions are executed and
+                  where code is located in memory. As an attacker cannot
+                  read the diversified code, it is assumed he cannot
+                  reliably exploit the code.In this paper, we show that the
+                  fundamental assumption behind code diversity can be
+                  broken, as executing the code reveals information about
+                  the code. Thus, we can leak information without needing
+                  to read the code. We demonstrate how an attacker can
+                  utilize a memory corruption vulnerability to create side
+                  channels that leak information in novel ways, removing
+                  the need for a memory disclosure vulnerability. We
+                  introduce seven new classes of attacks that involve fault
+                  analysis and timing side channels, where each allows a
+                  remote attacker to learn how code has been diversified.},
+  booktitle =    {Proceedings of the 2014 ACM SIGSAC Conference on Computer
+                  and Communications Security},
+  pages =        {54–65},
+  numpages =     {12},
+  keywords =     {address space layout randomization, information leakage,
+                  memory disclosure, code diversity, side-channel attacks},
+  location =     {Scottsdale, Arizona, USA},
+  series =       {CCS '14}
+}
+@misc{redox,
+  Title =        {{Redox: Your Next(Gen) OS}},
+  howpublished = "\url{https://www.redox-os.org/}",
+  note =         "[Online; accessed 22-Sep-2022]",
+}
+@misc{boom-core,
+  Title =        {{RISC-V BOOM}},
+  howpublished = "\url{https://boom-core.org/}",
+  note =         "[Online; accessed 22-Sep-2022]",
+}
+@ARTICLE{chipyard-amid-micro2020,
+  author =       {Amid, Alon and Biancolin, David and Gonzalez, Abraham and
+                  Grubb, Daniel and Karandikar, Sagar and Liew, Harrison
+                  and Magyar, Albert and Mao, Howard and Ou, Albert and
+                  Pemberton, Nathan and Rigge, Paul and Schmidt, Colin and
+                  Wright, John and Zhao, Jerry and Shao, Yakun Sophia and
+                  Asanović, Krste and Nikolić, Borivoje},
+  journal =      {IEEE Micro},
+  title =        {Chipyard: Integrated Design, Simulation, and
+                  Implementation Framework for Custom SoCs},
+  year =         {2020},
+  volume =       {40},
+  number =       {4},
+  pages =        {10-21},
+  abstract =     {Continued improvement in computing efficiency requires
+                  functional specialization of hardware designs. Agile
+                  hardware design methodologies have been proposed to
+                  alleviate the increased design costs of custom silicon
+                  architectures, but their practice thus far has been
+                  accompanied with challenges in integration and validation
+                  of complex systems-on-a-chip (SoCs). We present the
+                  Chipyard framework, an integrated SoC design, simulation,
+                  and implementation environment for specialized compute
+                  systems. Chipyard includes configurable, composable,
+                  open-source, generator-based IP blocks that can be used
+                  across multiple stages of the hardware development flow
+                  while maintaining design intent and integration
+                  consistency. Through cloud-hosted FPGA accelerated
+                  simulation and rapid ASIC implementation, Chipyard
+                  enables continuous validation of physically realizable
+                  customized systems.},
+  keywords =     {},
+  doi =          {10.1109/MM.2020.2996616},
+  ISSN =         {1937-4143},
+  month =        {July},
+}
+@misc{servo,
+  Title =        {{Servo}},
+  howpublished = "\url{https://servo.org/}",
+  note =         "[Online; accessed 22-Sep-2022]",
+}
+@INPROCEEDINGS{pch-drzevitzky-reconfig2009,
+  author =       {Drzevitzky, Stephanie and Kastens, Uwe and Platzner,
+                  Marco},
+  booktitle =    {2009 International Conference on Reconfigurable Computing
+                  and FPGAs},
+  title =        {Proof-Carrying Hardware: Towards Runtime Verification of
+                  Reconfigurable Modules},
+  year =         {2009},
+  volume =       {},
+  number =       {},
+  pages =        {189-194},
+  abstract =     {Dynamically reconfigurable hardware combines hardware
+                  performance with software-like flexibility and finds
+                  increasing use in networked systems. The capability to
+                  load hardware modules at runtime provides these systems
+                  with an unparalleled degree of adaptivity, but at the
+                  same time poses new challenges for security and
+                  safety. In this paper, we present proof-carrying hardware
+                  (PCH) as a novel approach to reconfigurable system
+                  security. PCH takes a key concept from software security,
+                  known as proof-carrying code, into the reconfigurable
+                  hardware domain. We outline the PCH concept and discuss
+                  runtime combinational equivalence checking as a first
+                  verification problem applying the concept. We present a
+                  tool flow and experimental results demonstrating the
+                  feasibility and potential of the PCH approach.},
+  keywords =     {},
+  doi =          {10.1109/ReConFig.2009.31},
+  ISSN =         {2325-6532},
+  month =        {Dec},
+}
+@INPROCEEDINGS{chakraborty-vlsid2010,
+  author =       {Chakraborty, Rajat Subhra and Bhunia, Swarup},
+  booktitle =    {2010 23rd International Conference on VLSI Design},
+  title =        {RTL Hardware IP Protection Using Key-Based Control and
+                  Data Flow Obfuscation},
+  year =         {2010},
+  volume =       {},
+  number =       {},
+  pages =        {405-410},
+  abstract =     {Recent trends of hardware intellectual property (IP)
+                  piracy and reverse engineering pose major business and
+                  security concerns to an IP-based system-on-chip (SoC)
+                  design flow. In this paper, we propose a Register
+                  Transfer Level (RTL) hardware IP protection technique
+                  based on low-overhead key-based obfuscation of control
+                  and data flow. The basic idea is to transform the RTL
+                  core into control and data flow graph (CDFG) and then
+                  integrate a well-obfuscated finite state machine (FSM) of
+                  special structure, referred as ¿Mode-Control FSM¿, into
+                  the CDFG in a manner that normal functional behavior is
+                  enabled only after application of a specific input
+                  sequence. We provide formal analysis of the effectiveness
+                  of the proposed approach and present a simple metric to
+                  quantify the level of obfuscation. We also present an
+                  integrated design flow that implements the proposed
+                  obfuscation at low computational overhead. Simulation
+                  results for two open-source IP cores show that high
+                  levels of security is achievable at nominal area and
+                  power overheads under delay constraint.},
+  keywords =     {},
+  doi =          {10.1109/VLSI.Design.2010.54},
+  ISSN =         {2380-6923},
+  month =        {Jan},
+}
+@inproceedings{amir-glsvlsi2017,
+  author =       {Amir, Sarah and Shakya, Bicky and Forte, Domenic and
+                  Tehranipoor, Mark and Bhunia, Swarup},
+  title =        {Comparative Analysis of Hardware Obfuscation for IP
+                  Protection},
+  year =         {2017},
+  isbn =         {9781450349727},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3060403.3060495},
+  doi =          {10.1145/3060403.3060495},
+  abstract =     {In the era of globalized Integrated Circuit (IC) design
+                  and manufacturing flow, a rising issue to the silicon
+                  industry is various attacks on hardware intellectual
+                  property (IP). As a measure to ensure security along the
+                  supply chain against IP piracy, tampering and reverse
+                  engineering, hardware obfuscation is considered a
+                  reliable defense mechanism. Sequential and combinational
+                  obfuscations are the primary classes of obfuscation, and
+                  multiple methods have been proposed in each type in
+                  recent years. This paper presents an overview of
+                  obfuscation techniques and a qualitative comparison of
+                  the two major types.},
+  booktitle =    {Proceedings of the on Great Lakes Symposium on VLSI 2017},
+  pages =        {363–368},
+  numpages =     {6},
+  keywords =     {hardware ip protection, sequential obfuscation,
+                  combinational obfuscation},
+  location =     {Banff, Alberta, Canada},
+  series =       {GLSVLSI '17}
+}
+@inproceedings{silhouette-zhou-usenix2020,
+  title =        {Silhouette: Efficient protected shadow stacks for
+                  embedded systems},
+  author =       {Zhou, Jie and Du, Yufei and Shen, Zhuojia and Ma,
+                  Lele and Criswell, John and Walls, Robert J},
+  booktitle =    {29th USENIX Security Symposium (USENIX Security 20)},
+  pages =        {1219--1236},
+  year =         {2020}
+}
+
+@inproceedings{jinn-dharsee-usenixsec2023,
+  author =       {Komail Dharsee and Ethan Johnson and John Criswell},
+  booktitle =    {Proceedings of the 32nd {USENIX} Security Symposium},
+  publisher =    {USENIX Association},
+  title =        {Jinn: Hijacking Safe Programs with Trojans},
+  year =         {2023},
+  month =        {Aug}
+}
+@inproceedings{pacman-ravichandran-isca2022,
+  author =       {Ravichandran, Joseph and Na, Weon Taek and Lang, Jay
+                  and Yan, Mengjia},
+  title =        {PACMAN: Attacking ARM Pointer Authentication with
+                  Speculative Execution},
+  year =         {2022},
+  isbn =         {9781450386104},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3470496.3527429},
+  doi =          {10.1145/3470496.3527429},
+  abstract =     {This paper studies the synergies between memory
+                  corruption vulnerabilities and speculative execution
+                  vulnerabilities. We leverage speculative execution
+                  attacks to bypass an important memory protection
+                  mechanism, ARM Pointer Authentication, a security
+                  feature that is used to enforce pointer
+                  integrity. We present PACMAN, a novel attack
+                  methodology that speculatively leaks PAC
+                  verification results via micro-architectural side
+                  channels without causing any crashes. Our attack
+                  removes the primary barrier to conducting
+                  control-flow hijacking attacks on a platform
+                  protected using Pointer Authentication.We
+                  demonstrate multiple proof-of-concept attacks of
+                  PACMAN on the Apple M1 SoC, the first desktop
+                  processor that supports ARM Pointer
+                  Authentication. We reverse engineer the TLB
+                  hierarchy on the Apple M1 SoC and expand
+                  micro-architectural side-channel attacks to Apple
+                  processors. Moreover, we show that the PACMAN attack
+                  works across privilege levels, meaning that we can
+                  attack the operating system kernel as an
+                  unprivileged user in userspace.},
+  booktitle =    {Proceedings of the 49th Annual International
+                  Symposium on Computer Architecture},
+  pages =        {685–698},
+  numpages =     {14},
+  keywords =     {micro-architectural side channels, security, memory
+                  corruption attacks, pointer authentication},
+  location =     {New York, New York},
+  series =       {ISCA '22}
+}
+@INPROCEEDINGS{picoxom-zhuojia-secdev2020,
+  author =       {Shen, Zhuojia and Dharsee, Komail and Criswell,
+                  John},
+  booktitle =    {2020 IEEE Secure Development (SecDev)},
+  title =        {Fast Execute-Only Memory for Embedded Systems},
+  year =         {2020},
+  volume =       {},
+  number =       {},
+  pages =        {7-14},
+  abstract =     {Remote code disclosure attacks threaten embedded
+                  systems as they allow attackers to steal
+                  intellectual property or to find reusable code for
+                  use in control-flow hijacking attacks. Execute-only
+                  memory (XOM) prevents remote code disclosures, but
+                  existing XOM solutions either require a memory
+                  management unit that is not available on ARM
+                  embedded systems or incur significant overhead.We
+                  present PicoXOM: a fast and novel XOM system for
+                  ARMv7-M and ARMv8-M devices which leverages ARM's
+                  Data Watchpoint and Tracing unit along with the
+                  processor's simplified memory protection
+                  hardware. On average, PicoXOM incurs 0.33\%
+                  performance overhead and 5.89\% code size overhead on
+                  two benchmark suites and five real-world
+                  applications.},
+  keywords =     {},
+  doi =          {10.1109/SecDev45635.2020.00017},
+  ISSN =         {},
+  month =        {Sep.},
+} 
+@misc{yosys,
+  Title =        {{YosysHQ}},
+  howpublished = "\url{https://yosyshq.net/}",
+  note =         "[Online; accessed 20-January-2023]",
+}
+@misc{ibex,
+  Title =        {{Ibex RISC-V Core}},
+  howpublished =
+                  "\url{https://github.com/lowRISC/ibex/tree/ab510f8acf2804efbe0a8d4cf93452b02acc05fe}",
+  note =         "[Online; accessed 20-January-2023]",
+}
+@misc{ibex-pmp,
+  Title =        {{Ibex Reference Guide - Physical Memory Protection}},
+  howpublished =
+                  "\url{https://ibex-core.readthedocs.io/en/latest/03_reference/pmp.html}",
+  note =         "[Online; accessed 21-January-2023]",
+}
+@misc{ibex-dummy,
+  Title =        {{Ibex Reference Guide - Dummy Instruction
+                  Insertion}},
+  howpublished =
+                  "\url{https://ibex-core.readthedocs.io/en/latest/03_reference/security.html#dummy-instruction-insertion}",
+  note =         "[Online; accessed 21-January-2023]",
+}
+@ARTICLE{7932880,
+
+  author={Jin, Yier and Guo, Xiaolong and Dutta, Raj Gautam and Bidmeshki, Mohammad-Mahdi and Makris, Yiorgos},
+
+  journal={IEEE Transactions on Information Forensics and Security}, 
+
+  title={Data Secrecy Protection Through Information Flow Tracking in Proof-Carrying Hardware IP—Part I: Framework Fundamentals}, 
+
+  year={2017},
+
+  volume={12},
+
+  number={10},
+
+  pages={2416-2429},
+
+  abstract={Proof-carrying hardware intellectual property (PCHIP) is a previously proposed framework for ensuring trustworthiness of third-party hardware IP through the development of formal proofs for security properties designed to prevent introduction of malicious behavior. Based on this framework, we introduce new approaches for assuring that the secrecy of internal information in a hardware design is not compromised by design flaws or malicious hardware Trojans. Specifically, we devise two PCHIP-based information flow tracking approaches, which enhance the formal PCHIP framework with secrecy tags and/or sensitivity levels in order to provide mechanisms for proving that sensitive information does not reach undesired sites. To assist in the development of data secrecy properties, we also introduce the concept of theorem generation functions, which enable generation of security theorems independent of the target circuit, thereby paving the way for proof automation. In addition, we enhance the PCHIP framework with a hierarchy-preserving methodology and we show its utility in preventing malicious data modification, which may indirectly result in sensitive information leakage, such as by modifying the secret key in a cryptographic core. This enhanced PCHIP framework also enables development of hybrid module libraries, which contain hardware description language code along with proofs of lemmas for these modules. These module libraries can then be used for hierarchically proving security properties in higher level designs, thereby reducing the proof development burden in the general PCHIP framework. Efforts toward automation of the proposed methodologies, as well as evaluation of their effectiveness in identifying design flaws or hardware Trojans in various cryptographic hardware designs are presented in part II of this paper series.},
+
+  keywords={},
+
+  doi={10.1109/TIFS.2017.2707323},
+
+  ISSN={1556-6021},
+
+  month={Oct},}
+
+@ARTICLE{jin-tifs2017,
+  author =       {Jin, Yier and Guo, Xiaolong and Dutta, Raj Gautam
+                  and Bidmeshki, Mohammad-Mahdi and Makris, Yiorgos},
+  journal =      {IEEE Transactions on Information Forensics and
+                  Security},
+  title =        {Data Secrecy Protection Through Information Flow
+                  Tracking in Proof-Carrying Hardware IP—Part I:
+                  Framework Fundamentals},
+  year =         {2017},
+  volume =       {12},
+  number =       {10},
+  pages =        {2416-2429},
+  abstract =     {Proof-carrying hardware intellectual property
+                  (PCHIP) is a previously proposed framework for
+                  ensuring trustworthiness of third-party hardware IP
+                  through the development of formal proofs for
+                  security properties designed to prevent introduction
+                  of malicious behavior. Based on this framework, we
+                  introduce new approaches for assuring that the
+                  secrecy of internal information in a hardware design
+                  is not compromised by design flaws or malicious
+                  hardware Trojans. Specifically, we devise two
+                  PCHIP-based information flow tracking approaches,
+                  which enhance the formal PCHIP framework with
+                  secrecy tags and/or sensitivity levels in order to
+                  provide mechanisms for proving that sensitive
+                  information does not reach undesired sites. To
+                  assist in the development of data secrecy
+                  properties, we also introduce the concept of theorem
+                  generation functions, which enable generation of
+                  security theorems independent of the target circuit,
+                  thereby paving the way for proof automation. In
+                  addition, we enhance the PCHIP framework with a
+                  hierarchy-preserving methodology and we show its
+                  utility in preventing malicious data modification,
+                  which may indirectly result in sensitive information
+                  leakage, such as by modifying the secret key in a
+                  cryptographic core. This enhanced PCHIP framework
+                  also enables development of hybrid module libraries,
+                  which contain hardware description language code
+                  along with proofs of lemmas for these modules. These
+                  module libraries can then be used for hierarchically
+                  proving security properties in higher level designs,
+                  thereby reducing the proof development burden in the
+                  general PCHIP framework. Efforts toward automation
+                  of the proposed methodologies, as well as evaluation
+                  of their effectiveness in identifying design flaws
+                  or hardware Trojans in various cryptographic
+                  hardware designs are presented in part II of this
+                  paper series.},
+  keywords =     {},
+  doi =          {10.1109/TIFS.2017.2707323},
+  ISSN =         {1556-6021},
+  month =        {Oct},
+}
+@inproceedings {kage-yufei-usenix2022,
+  author =       {Yufei Du and Zhuojia Shen and Komail Dharsee and Jie
+                  Zhou and Robert J. Walls and John Criswell},
+  title =        {Holistic {Control-Flow} Protection on {Real-Time}
+                  Embedded Systems with Kage},
+  booktitle =    {31st USENIX Security Symposium (USENIX Security 22)},
+  year =         {2022},
+  isbn =         {978-1-939133-31-1},
+  address =      {Boston, MA},
+  pages =        {2281--2298},
+  url =
+                  {https://www.usenix.org/conference/usenixsecurity22/presentation/du},
+  publisher =    {USENIX Association},
+  month =        aug,
+}
+
+@misc{intel-txt,
+  Title = {{Intel Trusted Execution Technology (TXT)}},
+  howpublished =
+"\url{https://www.intel.com/content/www/us/en/developer/articles/tool/intel-trusted-execution-technology.html}"
+  note =         "[Online; accessed 12-February-2023]",
+}
+@INPROCEEDINGS{timecache-ojha-isca2021,
+  author =       {Ojha, Divya and Dwarkadas, Sandhya},
+  booktitle =    {2021 ACM/IEEE 48th Annual International Symposium on
+                  Computer Architecture (ISCA)},
+  title =        {TimeCache: Using Time to Eliminate Cache Side
+                  Channels when Sharing Software},
+  year =         {2021},
+  volume =       {},
+  number =       {},
+  pages =        {375-387},
+  abstract =     {Timing side channels have been used to extract
+                  cryptographic keys and sensitive documents even from
+                  trusted enclaves. Specifically, cache side channels
+                  created by reuse of shared code or data in the
+                  memory hierarchy have been exploited by several
+                  known attacks, e.g., evict+reload for recovering an
+                  RSA key and Spectre variants for leaking
+                  speculatively loaded data.In this paper, we present
+                  TimeCache, a cache design that incorporates
+                  knowledge of prior cache line access to eliminate
+                  cache side channels due to reuse of shared software
+                  (code and data). Our goal is to retain the benefits
+                  of a shared cache of allowing each process access to
+                  the entire cache and of cache occupancy by a single
+                  copy of shared software. We achieve our goal by
+                  implementing per-process cache line visibility so
+                  that the processes do not benefit from cached data
+                  brought in by another process until they have
+                  incurred a corresponding miss penalty. Our design
+                  achieves low overhead by using a novel combination
+                  of timestamps and a hardware design to allow
+                  efficient parallel comparisons of the
+                  timestamps. The solution works at all the cache
+                  levels without the need to limit the number of
+                  security domains, and defends against an attacker
+                  process running on the same core, on a another
+                  hyperthread, or on another core.Our implementation
+                  in the gem5 simulator demonstrates that the system
+                  is able to defend against RSA key extraction. We
+                  evaluate performance using SPEC2006 and PARSEC and
+                  observe the overhead of TimeCache to be 1.13% on
+                  average. Delay due to first access misses adds the
+                  majority of the overhead, with the security context
+                  bookkeeping incurred at the time of a context switch
+                  contributing 0.02% of the 1.13%.},
+  keywords =     {},
+  doi =          {10.1109/ISCA52012.2021.00037},
+  ISSN =         {2575-713X},
+  month =        {June},
+}
+@INPROCEEDINGS{8574585,
+
+  author={Qureshi, Moinuddin K.},
+
+  booktitle={2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)}, 
+
+  title={CEASER: Mitigating Conflict-Based Cache Attacks via Encrypted-Address and Remapping}, 
+
+  year={2018},
+
+  volume={},
+
+  number={},
+
+  pages={775-787},
+
+  abstract={Modern processors share the last-level cache between all the cores to efficiently utilize the cache space. Unfortunately, such sharing makes the cache vulnerable to attacks whereby an adversary can infer the access pattern of a co-running application by carefully orchestrating evictions using cache conflicts. Conflict-based attacks can be mitigated by randomizing the location of the lines in the cache. Unfortunately, prior proposals for randomized mapping require storage-intensive tables and are effective only if the OS can classify the applications into protected and unprotected groups. The goal of this paper is to mitigate conflict-based attacks while incurring negligible storage and performance overheads, and without relying on OS support. This paper provides the key insight that randomized mapping can be accomplished efficiently by accessing the cache with an encrypted address, as encryption would cause the lines that map to the same set of a conventional cache to get scattered to different sets. This paper proposes CEASE, a design that uses Low-Latency Block-Cipher (LLBC) to translate the physical line-address into an encrypted line-address, and accesses the cache with this encrypted line-address. We analyze efficient designs for LLBC that can perform encryption and decryption within two cycles. We also propose CEASER, a design that periodically changes the encryption key and performs dynamic-remapping to improve robustness. CEASER provides strong security (tolerates 100+ years of attack), has low performance overhead (1% slowdown), requires a storage overhead of less than 24 bytes for the newly added structures, and does not need any OS support.},
+
+  keywords={},
+
+  doi={10.1109/MICRO.2018.00068},
+
+  ISSN={},
+
+  month={Oct},}
+
+@INPROCEEDINGS{ceaser-qureshi-micro2018,
+  author =       {Qureshi, Moinuddin K.},
+  booktitle =    {2018 51st Annual IEEE/ACM International Symposium on
+                  Microarchitecture (MICRO)},
+  title =        {CEASER: Mitigating Conflict-Based Cache Attacks via
+                  Encrypted-Address and Remapping},
+  year =         {2018},
+  volume =       {},
+  number =       {},
+  pages =        {775-787},
+  abstract =     {Modern processors share the last-level cache between
+                  all the cores to efficiently utilize the cache
+                  space. Unfortunately, such sharing makes the cache
+                  vulnerable to attacks whereby an adversary can infer
+                  the access pattern of a co-running application by
+                  carefully orchestrating evictions using cache
+                  conflicts. Conflict-based attacks can be mitigated
+                  by randomizing the location of the lines in the
+                  cache. Unfortunately, prior proposals for randomized
+                  mapping require storage-intensive tables and are
+                  effective only if the OS can classify the
+                  applications into protected and unprotected
+                  groups. The goal of this paper is to mitigate
+                  conflict-based attacks while incurring negligible
+                  storage and performance overheads, and without
+                  relying on OS support. This paper provides the key
+                  insight that randomized mapping can be accomplished
+                  efficiently by accessing the cache with an encrypted
+                  address, as encryption would cause the lines that
+                  map to the same set of a conventional cache to get
+                  scattered to different sets. This paper proposes
+                  CEASE, a design that uses Low-Latency Block-Cipher
+                  (LLBC) to translate the physical line-address into
+                  an encrypted line-address, and accesses the cache
+                  with this encrypted line-address. We analyze
+                  efficient designs for LLBC that can perform
+                  encryption and decryption within two cycles. We also
+                  propose CEASER, a design that periodically changes
+                  the encryption key and performs dynamic-remapping to
+                  improve robustness. CEASER provides strong security
+                  (tolerates 100+ years of attack), has low
+                  performance overhead (1\% slowdown), requires a
+                  storage overhead of less than 24 bytes for the newly
+                  added structures, and does not need any OS support.},
+  keywords =     {},
+  doi =          {10.1109/MICRO.2018.00068},
+  ISSN =         {},
+  month =        {Oct},
+}
+@inproceedings{scattercache-werner-usenixsec2019,
+  author =       {Werner, Mario and Unterluggauer, Thomas and Giner,
+                  Lukas and Schwarz, Michael and Gruss, Daniel and
+                  Mangard, Stefan},
+  title =        {SCATTERCACHE: Thwarting Cache Attacks via Cache Set
+                  Randomization},
+  year =         {2019},
+  isbn =         {9781939133069},
+  publisher =    {USENIX Association},
+  address =      {USA},
+  abstract =     {Cache side-channel attacks can be leveraged as a
+                  building block in attacks leaking secrets even in
+                  the absence of software bugs. Currently, there are
+                  no practical and generic mitigations with an
+                  acceptable performance overhead and strong security
+                  guarantees. The underlying problem is that caches
+                  are shared in a predictable way across security
+                  domains.In this paper, we eliminate this problem. We
+                  present SCATTERCACHE, a novel cache design to
+                  prevent cache attacks. SCATTERCACHE eliminates fixed
+                  cache-set congruences and, thus, makes
+                  eviction-based cache attacks unpractical. For this
+                  purpose, SCATTERCACHE retrofits skewed associative
+                  caches with a keyed mapping function, yielding a
+                  security-domain-dependent cache mapping. Hence, it
+                  becomes virtually impossible to find fully
+                  overlapping cache sets, rendering current
+                  eviction-based attacks infeasible. Even theoretical
+                  statistical attacks become unrealistic, as the
+                  attacker cannot confine contention to chosen cache
+                  sets. Consequently, the attacker has to resort to
+                  eviction of the entire cache, making deductions over
+                  cache sets or lines impossible and fully preventing
+                  highfrequency attacks. Our security analysis reveals
+                  that even in the strongest possible attacker model
+                  (noise-free), the construction of a reliable
+                  eviction set for PRIME+PROBE in an 8- way
+                  SCATTERCACHE with 16384 lines requires observation
+                  of at least 33:5 million victim memory accesses as
+                  compared to fewer than 103 on commodity
+                  caches. SCATTERCACHE requires hardware and software
+                  changes, yet is minimally invasive on the software
+                  level and is fully backward compatible with legacy
+                  software while still improving the security level
+                  over state-of-the-art caches. Finally, our
+                  evaluations show that the runtime performance of
+                  software is not curtailed and our design even
+                  outperforms state-of-the-art caches for certain
+                  realistic workloads.},
+  booktitle =    {Proceedings of the 28th USENIX Conference on
+                  Security Symposium},
+  pages =        {675–692},
+  numpages =     {18},
+  location =     {Santa Clara, CA, USA},
+  series =       {SEC'19}
+}
+@inproceedings {mirage-gururaj-usenixsec2021,
+  author =       {Gururaj Saileshwar and Moinuddin Qureshi},
+  title =        {{MIRAGE}: Mitigating {Conflict-Based} Cache Attacks
+                  with a Practical {Fully-Associative} Design},
+  booktitle =    {30th USENIX Security Symposium (USENIX Security 21)},
+  year =         {2021},
+  isbn =         {978-1-939133-24-3},
+  pages =        {1379--1396},
+  url =
+                  {https://www.usenix.org/conference/usenixsecurity21/presentation/saileshwar},
+  publisher =    {USENIX Association},
+  month =        aug,
+}
+@INPROCEEDINGS{dawg-kirianksy-micro2018,
+  author =       {Kiriansky, Vladimir and Lebedev, Ilia and
+                  Amarasinghe, Saman and Devadas, Srinivas and Emer,
+                  Joel},
+  booktitle =    {2018 51st Annual IEEE/ACM International Symposium on
+                  Microarchitecture (MICRO)},
+  title =        {DAWG: A Defense Against Cache Timing Attacks in
+                  Speculative Execution Processors},
+  year =         {2018},
+  volume =       {},
+  number =       {},
+  pages =        {974-987},
+  abstract =     {Software side channel attacks have become a serious
+                  concern with the recent rash of attacks on
+                  speculative processor architectures. Most attacks
+                  that have been demonstrated exploit the cache tag
+                  state as their exfiltration channel. While many
+                  existing defense mechanisms that can be implemented
+                  solely in software have been proposed, these
+                  mechanisms appear to patch specific attacks, and can
+                  be circumvented. In this paper, we propose minimal
+                  modifications to hardware to defend against a broad
+                  class of attacks, including those based on
+                  speculation, with the goal of eliminating the entire
+                  attack surface associated with the cache state
+                  covert channel. We propose DAWG, Dynamically
+                  Allocated Way Guard, a generic mechanism for secure
+                  way partitioning of set associative structures
+                  including memory caches. DAWG endows a set
+                  associative structure with a notion of protection
+                  domains to provide strong isolation. When applied to
+                  a cache, unlike existing quality of service
+                  mechanisms such as Intel's Cache Allocation
+                  Technology (CAT), DAWG fully isolates hits, misses,
+                  and metadata updates across protection domains. We
+                  describe how DAWG can be implemented on a processor
+                  with minimal modifications to modern operating
+                  systems. We describe a non-interference property
+                  that is orthogonal to speculative execution and
+                  therefore argue that existing attacks such as
+                  Spectre Variant 1 and 2 will not work on a system
+                  equipped with DAWG. Finally, we evaluate the
+                  performance impact of DAWG on the cache subsystem.},
+  keywords =     {},
+  doi =          {10.1109/MICRO.2018.00083},
+  ISSN =         {},
+  month =        {Oct},
+}
+@INPROCEEDINGS{invisispec-yan-micro2018,
+  author =       {Yan, Mengjia and Choi, Jiho and Skarlatos, Dimitrios
+                  and Morrison, Adam and Fletcher, Christopher and
+                  Torrellas, Josep},
+  booktitle =    {2018 51st Annual IEEE/ACM International Symposium on
+                  Microarchitecture (MICRO)},
+  title =        {InvisiSpec: Making Speculative Execution Invisible
+                  in the Cache Hierarchy},
+  year =         {2018},
+  volume =       {},
+  number =       {},
+  pages =        {428-441},
+  abstract =     {Hardware speculation offers a major surface for
+                  micro-architectural covert and side channel
+                  attacks. Unfortunately, defending against
+                  speculative execution attacks is challenging. The
+                  reason is that speculations destined to be squashed
+                  execute incorrect instructions, outside the scope of
+                  what programmers and compilers reason
+                  about. Further, any change to micro-architectural
+                  state made by speculative execution can leak
+                  information. In this paper, we propose InvisiSpec, a
+                  novel strategy to defend against hardware
+                  speculation attacks in multiprocessors by making
+                  speculation invisible in the data cache
+                  hierarchy. InvisiSpec blocks micro-architectural
+                  covert and side channels through the multiprocessor
+                  data cache hierarchy due to speculative loads. In
+                  InvisiSpec, unsafe speculative loads read data into
+                  a speculative buffer, without modifying the cache
+                  hierarchy. When the loads become safe, InvisiSpec
+                  makes them visible to the rest of the
+                  system. InvisiSpec identifies loads that might have
+                  violated memory consistency and, at this time,
+                  forces them to perform a validation step. We propose
+                  two InvisiSpec designs: one to defend against
+                  Spectre-like attacks and another to defend against
+                  futuristic attacks, where any speculative load may
+                  pose a threat. Our simulations with 23 SPEC and 10
+                  PARSEC workloads show that InvisiSpec is
+                  effective. Under TSO, using fences to defend against
+                  Spectre attacks slows down execution by 74% relative
+                  to a conventional, insecure processor; InvisiSpec
+                  reduces the execution slowdown to only 21%. Using
+                  fences to defend against futuristic attacks slows
+                  down execution by 208%; InvisiSpec reduces the
+                  slowdown to 72%.},
+  keywords =     {},
+  doi =          {10.1109/MICRO.2018.00042},
+  ISSN =         {},
+  month =        {Oct},
+}
+@inproceedings{qureshi-isca2019,
+  author =       {Qureshi, Moinuddin K.},
+  title =        {New Attacks and Defense for Encrypted-Address Cache},
+  year =         {2019},
+  isbn =         {9781450366694},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3307650.3322246},
+  doi =          {10.1145/3307650.3322246},
+  abstract =     {Conflict-based cache attacks can allow an adversary
+                  to infer the access pattern of a co-running
+                  application by orchestrating evictions via cache
+                  conflicts. Such attacks can be mitigated by
+                  randomizing the location of the lines in the
+                  cache. Our recent proposal, CEASER, makes cache
+                  randomization practical by accessing the cache using
+                  an encrypted address and periodically changing the
+                  encryption key. CEASER was analyzed with the
+                  state-of-the-art algorithm on forming eviction sets,
+                  and the analysis showed that CEASER with a
+                  Remap-Rate of 1\% is sufficient to tolerate years of
+                  attack.In this paper, we present two new attacks
+                  that significantly push the state-of-the-art in
+                  forming eviction sets. Our first attack reduces the
+                  time required to form the eviction set from O(L2) to
+                  O(L), where L is the number of lines in the
+                  attack. This attack is 35x faster than the
+                  best-known attack and requires that the Remap-Rate
+                  of CEASER be increased to 35\%. Our second attack
+                  exploits the replacement policy (we analyze LRU,
+                  RRIP, and Random) to form eviction set quickly and
+                  requires that the Remap-Rate of CEASER be increased
+                  to more than 100\%, incurring impractical
+                  overheads.To improve the robustness of CEASER
+                  against these attacks in a practical manner, we
+                  propose Skewed-CEASER (CEASER-S), which divides the
+                  cache ways into multiple partitions and maps the
+                  cache line to be resident in a different set in each
+                  partition. This design significantly improves the
+                  robustness of CEASER, as the attacker must form an
+                  eviction set that can dislodge the line from
+                  multiple possible locations. We show that CEASER-S
+                  can tolerate years of attacks while retaining a
+                  Remap-Rate of 1\%. CEASER-S incurs negligible
+                  slowdown (within 1\%) and a storage overhead of less
+                  than 100 bytes for the newly added structures.},
+  booktitle =    {Proceedings of the 46th International Symposium on
+                  Computer Architecture},
+  pages =        {360–371},
+  numpages =     {12},
+  location =     {Phoenix, Arizona},
+  series =       {ISCA '19}
+}
+
+@INPROCEEDINGS{cojocar-oakland2019,
+  author =       {Cojocar, Lucian and Razavi, Kaveh and Giuffrida,
+                  Cristiano and Bos, Herbert},
+  booktitle =    {2019 IEEE Symposium on Security and Privacy (SP)},
+  title =        {Exploiting Correcting Codes: On the Effectiveness of
+                  ECC Memory Against Rowhammer Attacks},
+  year =         {2019},
+  volume =       {},
+  number =       {},
+  pages =        {55-71},
+  abstract =     {Given the increasing impact of Rowhammer, and the
+                  dearth of adequate other hardware defenses, many in
+                  the security community have pinned their hopes on
+                  error-correcting code (ECC) memory as one of the few
+                  practical defenses against Rowhammer
+                  attacks. Specifically, the expectation is that the
+                  ECC algorithm will correct or detect any bits they
+                  manage to flip in memory in real-world
+                  settings. However, the extent to which ECC really
+                  protects against Rowhammer is an open research
+                  question, due to two key challenges. First, the
+                  details of the ECC implementations in commodity
+                  systems are not known. Second, existing Rowhammer
+                  exploitation techniques cannot yield reliable
+                  attacks in presence of ECC memory. In this paper, we
+                  address both challenges and provide concrete
+                  evidence of the susceptibility of ECC memory to
+                  Rowhammer attacks. To address the first challenge,
+                  we describe a novel approach that combines a
+                  custom-made hardware probe, Rowhammer bit flips, and
+                  a cold boot attack to reverse engineer ECC functions
+                  on commodity AMD and Intel processors. To address
+                  the second challenge, we present ECCploit, a new
+                  Rowhammer attack based on composable,
+                  data-controlled bit flips and a novel side channel
+                  in the ECC memory controller. We show that, while
+                  ECC memory does reduce the attack surface for
+                  Rowhammer, ECCploit still allows an attacker to
+                  mount reliable Rowhammer attacks against vulnerable
+                  ECC memory on a variety of systems and
+                  configurations. In addition, we show that, despite
+                  the non-trivial constraints imposed by ECC, ECCploit
+                  can still be powerful in practice and mimic the
+                  behavior of prior Rowhammer exploits.},
+  keywords =     {},
+  doi =          {10.1109/SP.2019.00089},
+  ISSN =         {2375-1207},
+  month =        {May},
 }
