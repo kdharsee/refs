@@ -7210,3 +7210,229 @@ month = aug,
   ISSN =         {2375-1207},
   month =        {May},
 }
+@inproceedings{iskios-gravani-raid2021,
+  author =       {Gravani, Spyridoula and Hedayati, Mohammad and
+                  Criswell, John and Scott, Michael L.},
+  title =        {Fast Intra-Kernel Isolation and Security with
+                  IskiOS},
+  year =         {2021},
+  isbn =         {9781450390583},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3471621.3471849},
+  doi =          {10.1145/3471621.3471849},
+  abstract =     {The kernels of operating systems such as Windows,
+                  Linux, and MacOS are vulnerable to control-flow
+                  hijacking. Defenses exist, but many require
+                  efficient intra-address-space
+                  isolation. Execute-only memory, for example,
+                  requires read protection on code segments, and
+                  shadow stacks require protection from buffer
+                  overwrites. Intel’s Protection Keys for Userspace
+                  (PKU) could, in principle, provide the intra-kernel
+                  isolation needed by such defenses, but, when used as
+                  designed, it applies only to user-mode application
+                  code. This paper presents an unconventional approach
+                  to memory protection, allowing PKU to be used within
+                  the operating system kernel on existing Intel
+                  hardware, replacing the traditional user/supervisor
+                  isolation mechanism and, simultaneously, enabling
+                  efficient intra-kernel isolation. We call the
+                  resulting mechanism Protection Keys for Kernelspace
+                  (PKK). To demonstrate its utility and efficiency, we
+                  present a system we call IskiOS: a Linux variant
+                  featuring execute-only memory (XOM) and the
+                  first-ever race-free shadow stacks for
+                  x86-64. Experiments with the LMBench kernel
+                  microbenchmarks display a geometric mean overhead of
+                  about 11\% for PKK and no additional overhead for
+                  XOM. IskiOS’s shadow stacks bring the total to
+                  22\%. For full applications, experiments with the
+                  system benchmarks of the Phoronix test suite display
+                  negligible overhead for PKK and XOM, and less than
+                  5\% geometric mean overhead for shadow stacks.},
+  booktitle =    {Proceedings of the 24th International Symposium on
+                  Research in Attacks, Intrusions and Defenses},
+  pages =        {119–134},
+  numpages =     {16},
+  keywords =     {intra-kernel isolation, security, protection keys,
+                  operating systems},
+  location =     {San Sebastian, Spain},
+  series =       {RAID '21}
+}
+@article{burow-acmsurvey2017,
+  author =       {Burow, Nathan and Carr, Scott A. and Nash, Joseph
+                  and Larsen, Per and Franz, Michael and Brunthaler,
+                  Stefan and Payer, Mathias},
+  title =        {Control-Flow Integrity: Precision, Security, and
+                  Performance},
+  year =         {2017},
+  issue_date =   {January 2018},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  volume =       {50},
+  number =       {1},
+  issn =         {0360-0300},
+  url =          {https://doi.org/10.1145/3054924},
+  doi =          {10.1145/3054924},
+  abstract =     {Memory corruption errors in C/C++ programs remain
+                  the most common source of security vulnerabilities
+                  in today’s systems. Control-flow hijacking attacks
+                  exploit memory corruption vulnerabilities to divert
+                  program execution away from the intended control
+                  flow. Researchers have spent more than a decade
+                  studying and refining defenses based on Control-Flow
+                  Integrity (CFI); this technique is now integrated
+                  into several production compilers. However, so far,
+                  no study has systematically compared the various
+                  proposed CFI mechanisms nor is there any protocol on
+                  how to compare such mechanisms. We compare a broad
+                  range of CFI mechanisms using a unified nomenclature
+                  based on (i) a qualitative discussion of the
+                  conceptual security guarantees, (ii) a quantitative
+                  security evaluation, and (iii) an empirical
+                  evaluation of their performance in the same test
+                  environment. For each mechanism, we evaluate (i)
+                  protected types of control-flow transfers and (ii)
+                  precision of the protection for forward and backward
+                  edges. For open-source, compiler-based
+                  implementations, we also evaluate (iii) generated
+                  equivalence classes and target sets and (iv) runtime
+                  performance.},
+  journal =      {ACM Comput. Surv.},
+  month =        {apr},
+  articleno =    {16},
+  numpages =     {33},
+  keywords =     {shadow stack, return-oriented programming,
+                  control-flow hijacking, Control-flow integrity}
+}
+@misc{the-big-hack,
+  Title = {The Big Hack: How China Used a Tiny Chip to Infiltrate U.S. Companies},
+  howpublished =
+"\url{https://www.bloomberg.com/news/features/2018-10-04/the-big-hack-how-china-used-a-tiny-chip-to-infiltrate-america-s-top-companies?utm_source=website&utm_medium=share&utm_campaign=copy}"
+  note =         "[Online; accessed 24-February-2023]",
+}
+@inproceedings{randezvous-shen-acsac2022,
+  author =       {Shen, Zhuojia and Dharsee, Komail and Criswell,
+                  John},
+  title =        {Randezvous: Making Randomization Effective on MCUs},
+  year =         {2022},
+  isbn =         {9781450397599},
+  publisher =    {Association for Computing Machinery},
+  address =      {New York, NY, USA},
+  url =          {https://doi.org/10.1145/3564625.3567970},
+  doi =          {10.1145/3564625.3567970},
+  abstract =     {Internet-of-Things devices such as autonomous
+                  vehicular sensors, medical devices, and industrial
+                  cyber-physical systems commonly rely on small,
+                  resource-constrained microcontrollers (MCUs). MCU
+                  software is typically written in C and is prone to
+                  memory safety vulnerabilities that are exploitable
+                  by remote attackers to launch code reuse attacks and
+                  code/control data leakage attacks. We present
+                  Randezvous, a highly performant
+                  diversification-based mitigation to such attacks and
+                  their brute force variants on ARM MCUs. Atop
+                  code/data layout randomization and an efficient
+                  execute-only code approach, Randezvous creates decoy
+                  pointers to camouflage control data in memory; code
+                  pointers in the stack are then protected by a
+                  diversified shadow stack, local-to-global variable
+                  promotion, and return address
+                  nullification. Moreover, Randezvous adds a novel
+                  delayed reboot mechanism to slow down persistent
+                  attacks and mitigates control data spraying attacks
+                  via global guards. We demonstrate Randezvous’s
+                  security by statistically modeling leakage-equipped
+                  brute force attacks under Randezvous, crafting a
+                  proof-of-concept exploit that shows Randezvous’s
+                  efficacy, and studying a real-world CVE. Our
+                  evaluation of Randezvous shows low overhead on three
+                  benchmark suites and two applications.},
+  booktitle =    {Proceedings of the 38th Annual Computer Security
+                  Applications Conference},
+  pages =        {28–41},
+  numpages =     {14},
+  keywords =     {randomization, microcontrollers, entropy
+                  improvements, control data protection},
+  location =     {Austin, TX, USA},
+  series =       {ACSAC '22}
+}
+@INPROCEEDINGS{8416829,
+
+  author={Vijaykumar, Nandita and Jain, Abhilasha and Majumdar, Diptesh and Hsieh, Kevin and Pekhimenko, Gennady and Ebrahimi, Eiman and Hajinazar, Nastaran and Gibbons, Phillip B. and Mutlu, Onur},
+
+  booktitle={2018 ACM/IEEE 45th Annual International Symposium on Computer Architecture (ISCA)}, 
+
+  title={A Case for Richer Cross-Layer Abstractions: Bridging the Semantic Gap with Expressive Memory}, 
+
+  year={2018},
+
+  volume={},
+
+  number={},
+
+  pages={207-220},
+
+  abstract={This paper makes a case for a new cross-layer interface, Expressive Memory (XMem), to communicate higher-level program semantics from the application to the system software and hardware architecture. XMem provides (i) a flexible and extensible abstraction, called an Atom, enabling the application to express key program semantics in terms of how the program accesses data and the attributes of the data itself, and (ii) new cross-layer interfaces to make the expressed higher-level information available to the underlying OS and architecture. By providing key information that is otherwise unavailable, XMem exposes a new, rich view of the program data to the OS and the different architectural components that optimize memory system performance (e.g., caches, memory controllers). By bridging the semantic gap between the application and the underlying memory resources, XMem provides two key benefits. First, it enables architectural/system-level techniques to leverage key program semantics that are challenging to predict or infer. Second, it improves the efficacy and portability of software optimizations by alleviating the need to tune code for specific hardware resources (e.g., cache space). While XMem is designed to enhance and enable a wide range of memory optimizations, we demonstrate the benefits of XMem using two use cases: (i) improving the performance portability of software-based cache optimization by expressing the semantics of data locality in the optimization and (ii) improving the performance of OS-based page placement in DRAM by leveraging the semantics of data structures and their access properties.},
+
+  keywords={},
+
+  doi={10.1109/ISCA.2018.00027},
+
+  ISSN={2575-713X},
+
+  month={June},}
+
+@INPROCEEDINGS{vijaykumar-isca2018,
+  author =       {Vijaykumar, Nandita and Jain, Abhilasha and
+                  Majumdar, Diptesh and Hsieh, Kevin and Pekhimenko,
+                  Gennady and Ebrahimi, Eiman and Hajinazar, Nastaran
+                  and Gibbons, Phillip B. and Mutlu, Onur},
+  booktitle =    {2018 ACM/IEEE 45th Annual International Symposium on
+                  Computer Architecture (ISCA)},
+  title =        {A Case for Richer Cross-Layer Abstractions: Bridging
+                  the Semantic Gap with Expressive Memory},
+  year =         {2018},
+  volume =       {},
+  number =       {},
+  pages =        {207-220},
+  abstract =     {This paper makes a case for a new cross-layer
+                  interface, Expressive Memory (XMem), to communicate
+                  higher-level program semantics from the application
+                  to the system software and hardware
+                  architecture. XMem provides (i) a flexible and
+                  extensible abstraction, called an Atom, enabling the
+                  application to express key program semantics in
+                  terms of how the program accesses data and the
+                  attributes of the data itself, and (ii) new
+                  cross-layer interfaces to make the expressed
+                  higher-level information available to the underlying
+                  OS and architecture. By providing key information
+                  that is otherwise unavailable, XMem exposes a new,
+                  rich view of the program data to the OS and the
+                  different architectural components that optimize
+                  memory system performance (e.g., caches, memory
+                  controllers). By bridging the semantic gap between
+                  the application and the underlying memory resources,
+                  XMem provides two key benefits. First, it enables
+                  architectural/system-level techniques to leverage
+                  key program semantics that are challenging to
+                  predict or infer. Second, it improves the efficacy
+                  and portability of software optimizations by
+                  alleviating the need to tune code for specific
+                  hardware resources (e.g., cache space). While XMem
+                  is designed to enhance and enable a wide range of
+                  memory optimizations, we demonstrate the benefits of
+                  XMem using two use cases: (i) improving the
+                  performance portability of software-based cache
+                  optimization by expressing the semantics of data
+                  locality in the optimization and (ii) improving the
+                  performance of OS-based page placement in DRAM by
+                  leveraging the semantics of data structures and
+                  their access properties.},
+  keywords =     {},
+  doi =          {10.1109/ISCA.2018.00027},
+  ISSN =         {2575-713X},
+  month =        {June},
+} 
